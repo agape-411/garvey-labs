@@ -23,13 +23,13 @@ const AboutPage = () => {
 
       {/* Text Content */}
       <div className="relative z-20 text-center px-4 sm:px-6 max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white leading-tight">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight">
           About{" "}
           <span className="bg-gradient-accent bg-clip-text text-white">
             Garvey Labs
           </span>
         </h1>
-        <p className="text-lg md:text-2xl text-white mb-8">
+        <p className="text-lg md:text-lg sm:text-lg text-white mb-8">
           Leading strategic communications and community engagement for
           positive change.
         </p>
@@ -45,7 +45,7 @@ const AboutPage = () => {
               <h2 className="text-3xl md:text-5xl font-bold mb-8 text-primary">
                 About Terry Lee
               </h2>
-              <div className="space-y-6 text-base md:text-lg font-medium">
+              <div className="space-y-6 text-md sm:text-lg md:text-lg font-medium">
                 <p>
                   With over 25 years of experience spanning strategic
                   communications and community engagement, Terry leads Garvey
@@ -147,7 +147,7 @@ const AboutPage = () => {
                 <div className="h-2 bg-primary" />
                 <CardContent className="p-6 md:p-8">
                   <h3 className="text-xl md:text-2xl font-bold mb-4">{item.title}</h3>
-                  <p className="text-base md:text-lg text-gray-700 font-medium">
+                  <p className="text-md sm:text-lg md:text-lg text-gray-700 font-medium">
                     {item.desc}
                   </p>
                 </CardContent>
@@ -160,7 +160,7 @@ const AboutPage = () => {
       {/* Why Choose Garvey Labs */}
       <section className="py-20 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">
+          <h2 className="text-4xl md:text-6xl font-bold text-center mb-16">
             Why Choose Garvey Labs
           </h2>
           <div className="grid md:grid-cols-2 gap-10">
@@ -193,7 +193,7 @@ const AboutPage = () => {
                 <h3 className="text-xl md:text-2xl font-bold mb-4 text-primary">
                   {item.title}
                 </h3>
-                <p className="text-base md:text-lg text-gray-700 font-medium">
+                <p className="text-md sm:text-lg md:text-lg text-gray-700 font-medium">
                   {item.content}
                 </p>
               </div>

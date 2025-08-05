@@ -10,7 +10,7 @@ const Footer = () => {
         {/* Branding */}
         <div>
           <h3 className="text-2xl font-bold mb-3">Garvey Labs</h3>
-          <p className="text-sm leading-relaxed text-gray-300">
+          <p className="text-md leading-relaxed text-gray-300">
             Strategic Communications & Community Engagement for social impact and renewable energy organizations.
           </p>
         </div>
@@ -18,7 +18,7 @@ const Footer = () => {
         {/* Quick Links */}
         <div>
           <h4 className="text-lg font-semibold uppercase mb-4">Quick Links</h4>
-          <ul className="space-y-2 text-sm text-gray-400">
+          <ul className="space-y-2 text-md text-gray-400">
             <li>
               <Link href="/" className="hover:text-white transition">Home</Link>
             </li>

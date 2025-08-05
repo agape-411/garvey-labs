@@ -44,7 +44,7 @@ const ContactPage = () => {
       {/* Contact Form */}
       <section className="max-w-3xl mx-auto py-10">
         <h2 className="text-2xl font-semibold mb-4">Get In Touch</h2>
-        <p className="mb-8">
+        <p className="mb-8 text-lg">
           Whether you're looking to develop a strategic communications campaign, engage communities
           around a renewable energy project, or navigate a challenging situation, we're here to help.
         </p>
@@ -127,17 +127,17 @@ const ContactPage = () => {
         <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto px-4">
           <div className="bg-white dark:bg-gray-900 border p-6 rounded text-center hover:bg-green-500">
             <h3 className="text-lg font-medium">Email</h3>
-            <p className="mt-2 text-sm">contacts@garveylabs.com</p>
+            <p className="mt-2 text-lg">contacts@garveylabs.com</p>
           </div>
 
           <div className="bg-white dark:bg-gray-900 border p-6 rounded text-center hover:bg-green-500">
             <h3 className="text-lg font-medium">Phone</h3>
-            <p className="mt-2 text-sm">(555) 123-4567</p>
+            <p className="mt-2 text-lg">(555) 123-4567</p>
           </div>
 
           <div className="bg-white dark:bg-gray-900 border p-6 rounded text-center hover:bg-green-500">
             <h3 className="text-lg font-medium">Location</h3>
-            <p className="mt-2 text-sm">Washington, DC</p>
+            <p className="mt-2 text-lg">Washington, DC</p>
           </div>
         </div>
       </section>

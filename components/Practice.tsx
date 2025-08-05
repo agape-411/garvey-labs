@@ -66,10 +66,10 @@ const Practice = () => {
               <h3 className="text-2xl md:text-3xl font-bold text-[#1A365D]">
                 {area.title}
               </h3>
-              <p className="text-sm md:text-base font-medium text-[#2A4365]">
+              <p className="text-lg md:text-lg font-medium text-[#2A4365]">
                 {area.subtext}
               </p>
-              <p className="text-gray-800 text-base md:text-lg leading-relaxed">
+              <p className="text-gray-800 text-lg md:text-lg leading-relaxed">
                 {area.description}
               </p>
             </div>

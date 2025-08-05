@@ -176,7 +176,7 @@ export default function LaborUnionPage() {
                     <CardTitle className="text-lg sm:text-xl font-bold">{service.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription className="text-base sm:text-lg text-gray-700 font-medium">
+                    <CardDescription className="text-md sm:text-lg text-gray-700 font-medium">
                       {service.description}
                     </CardDescription>
                   </CardContent>
@@ -203,7 +203,7 @@ export default function LaborUnionPage() {
                   <item.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-lg sm:text-xl font-bold mb-2">{item.title}</h3>
-                <p className="text-base sm:text-lg text-gray-600 font-medium">{item.description}</p>
+                <p className="text-lg sm:text-lg text-gray-600 font-medium">{item.description}</p>
               </div>
             ))}
           </div>

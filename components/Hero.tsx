@@ -24,11 +24,11 @@ const HomeSection = () => {
 
         {/* Hero Content */}
         <div className="relative z-20 flex flex-col items-center justify-start h-full text-center px-4 sm:px-6 pt-32">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 text-white drop-shadow-lg">
+          <h1 className="text-4xl md:text-7xl lg:text-7xl font-extrabold tracking-tight mb-6 text-white drop-shadow-lg">
             Garvey Labs
           </h1>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed max-w-3xl text-white drop-shadow-md">
-            Creating Positive Change Through Strategic Communications, Community Engagement, & Public Affairs
+          <p className="text-lg sm:text-xl md:text-xl lg:text-lg leading-relaxed max-w-3xl text-white drop-shadow-md">
+            The Science of Strategic Communications & Public Affairs
           </p>
         </div>
       </section>

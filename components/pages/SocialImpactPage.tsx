@@ -39,7 +39,7 @@ const SectionHeader = ({ children }: { children: React.ReactNode }) => {
   return (
     <h2
       ref={ref}
-      className={`text-3xl md:text-5xl font-bold text-center mb-16 transition-all duration-700 ease-out ${
+      className={`text-2xl sm:text-3xl md:text-5xl font-bold text-center mb-12 sm:mb-16 transition-all duration-700 ease-out ${
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
       } text-red-700`}
     >
@@ -75,7 +75,7 @@ const services = [
       "Intersectional storytelling approaches",
       "Campaign messaging for policy change",
     ],
-    image: "/images/Si1.png",
+    image: "/images/S10.jpg",
   },
   {
     title: "Crisis & Reputation Management",
@@ -128,7 +128,7 @@ const focusAreas = [
 
 const SocialImpactPage = () => {
   return (
-    <div className="bg-white text-red-900">
+    <div className="bg-white text-red-900 leading-relaxed">
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-black/50">
         <img
@@ -136,9 +136,9 @@ const SocialImpactPage = () => {
           alt="Social Impact Hero"
           className="absolute inset-0 w-full h-full object-cover opacity-30"
         />
-        <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
+        <div className="relative z-10 text-center px-4 sm:px-6 max-w-5xl mx-auto">
           <FadeInOnScroll>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6 text-white">
               Strategic Communications for
               <span className="block bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-red-700">
                 Social Impact
@@ -146,25 +146,31 @@ const SocialImpactPage = () => {
             </h1>
           </FadeInOnScroll>
           <FadeInOnScroll>
-            <p className="text-xl md:text-2xl text-red-100 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl md:text-2xl text-red-100 max-w-3xl mx-auto">
               Amplifying voices for social justice, equity, and democratic reform through powerful storytelling and strategic engagement.
             </p>
           </FadeInOnScroll>
           <FadeInOnScroll>
-            <div className="mt-8 flex flex-wrap gap-4 justify-center">
-              <Badge className="bg-red-100 text-red-800 text-lg py-2 px-4">Social Justice</Badge>
-              <Badge className="bg-red-100 text-red-800 text-lg py-2 px-4">Democracy</Badge>
-              <Badge className="bg-red-100 text-red-800 text-lg py-2 px-4">Equity</Badge>
+            <div className="mt-6 sm:mt-8 flex flex-wrap gap-4 justify-center">
+              <Badge className="bg-red-100 text-red-800 text-sm sm:text-base py-2 px-4">
+                Social Justice
+              </Badge>
+              <Badge className="bg-red-100 text-red-800 text-sm sm:text-base py-2 px-4">
+                Democracy
+              </Badge>
+              <Badge className="bg-red-100 text-red-800 text-sm sm:text-base py-2 px-4">
+                Equity
+              </Badge>
             </div>
           </FadeInOnScroll>
         </div>
       </section>
 
       {/* Approach Section */}
-      <section className="py-20 px-6 bg-red-300">
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-red-300">
         <div className="max-w-7xl mx-auto">
           <SectionHeader>Our Social Impact Approach</SectionHeader>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-10">
             {approach.map((item, i) => (
               <FadeInOnScroll key={i}>
                 <Card className="h-full border-0 shadow-md hover:shadow-xl transition duration-300 bg-white">
@@ -173,9 +179,11 @@ const SocialImpactPage = () => {
                     alt={item.title}
                     className="w-full h-48 object-cover"
                   />
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-3 text-red-700">{item.title}</h3>
-                    <p className="text-gray-700 text-base leading-relaxed">{item.desc}</p>
+                  <CardContent className="p-5 sm:p-6">
+                    <h3 className="text-lg sm:text-xl font-bold mb-3 text-red-700">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-700 text-lg sm:text-lg">{item.desc}</p>
                   </CardContent>
                 </Card>
               </FadeInOnScroll>
@@ -185,7 +193,7 @@ const SocialImpactPage = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <SectionHeader>Our Social Impact Services</SectionHeader>
           <div className="grid md:grid-cols-3 gap-10">
@@ -195,11 +203,13 @@ const SocialImpactPage = () => {
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-80 object-cover"
+                    className="w-full h-72 sm:h-80 object-cover"
                   />
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold text-red-700 mb-4">{item.title}</h3>
-                    <ul className="space-y-2 pl-4 list-disc text-base text-gray-700">
+                  <CardContent className="p-5 sm:p-6">
+                    <h3 className="text-lg sm:text-xl font-bold text-red-700 mb-4">
+                      {item.title}
+                    </h3>
+                    <ul className="space-y-2 pl-4 list-disc text-lg sm:text-lg text-gray-700">
                       {item.desc.map((point, j) => (
                         <li key={j}>{point}</li>
                       ))}
@@ -213,14 +223,14 @@ const SocialImpactPage = () => {
       </section>
 
       {/* Focus Areas Section */}
-      <section className="py-20 px-6 bg-red-300">
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-red-300">
         <div className="max-w-7xl mx-auto">
           <SectionHeader>Focus Areas</SectionHeader>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {focusAreas.map((item, i) => (
               <FadeInOnScroll key={i}>
                 <Card className="h-full overflow-hidden border shadow-sm hover:shadow-md transition duration-300">
-                  <div className="relative h-[240px] overflow-hidden">
+                  <div className="relative h-[200px] sm:h-[240px] overflow-hidden">
                     <img
                       src={item.image}
                       alt={item.title}
@@ -228,12 +238,14 @@ const SocialImpactPage = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                     <div className="absolute bottom-4 left-4">
-                      <Badge className="bg-white/90 text-red-800 shadow-md">{item.badge}</Badge>
+                      <Badge className="bg-white/90 text-red-800 shadow-md">
+                        {item.badge}
+                      </Badge>
                     </div>
                   </div>
-                  <CardContent className="p-6">
-                    <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                    <p className="text-gray-700 text-base leading-relaxed">{item.desc}</p>
+                  <CardContent className="p-5 sm:p-6">
+                    <h3 className="text-lg sm:text-lx font-semibold mb-2">{item.title}</h3>
+                    <p className="text-lg sm:text-lg text-gray-700">{item.desc}</p>
                   </CardContent>
                 </Card>
               </FadeInOnScroll>

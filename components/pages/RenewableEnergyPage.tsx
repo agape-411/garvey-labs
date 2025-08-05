@@ -18,7 +18,7 @@ const RenewableEnergyPage = () => {
           <h1 className="text-4xl md:text-6xl font-bold text-white max-w-5xl">
             Sustainable Renewable Energy Development Community Engagement
           </h1>
-          <p className="text-xl md:text-2xl mt-4 max-w-3xl text-green-100">
+          <p className="text-xl md:text-lg mt-4 max-w-3xl text-green-100">
             Building community support for clean energy projects through innovative engagement
           </p>
         </div>
@@ -26,7 +26,7 @@ const RenewableEnergyPage = () => {
 
       {/* Renewable Energy Approach */}
       <section className="bg-[#fbfcff] text-[#2D3748] py-20 px-6 md:px-20 transition-all duration-500">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-green-700 mb-16">
+        <h2 className="text-4xl md:text-5xl font-bold text-center text-green-700 mb-16">
           Our Renewable Energy Approach
         </h2>
         {[
@@ -62,7 +62,7 @@ const RenewableEnergyPage = () => {
             </div>
             <div className="md:w-1/2 text-center md:text-left">
               <h3 className="text-2xl font-bold text-green-700 mb-4">{item.title}</h3>
-              <p className="text-[1.15rem] leading-relaxed font-normal">{item.desc}</p>
+              <p className="text-lg leading-relaxed font-normal">{item.desc}</p>
             </div>
           </div>
         ))}
@@ -70,7 +70,7 @@ const RenewableEnergyPage = () => {
 
       {/* Tools & Methodologies */}
       <section className="bg-[#d2fcd5] text-[#2D3748] py-20 px-6 md:px-20 transition-all duration-500">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-green-800 mb-12">
+        <h2 className="text-3xl md:text-5xl sm:text-lg font-bold text-center text-green-800 mb-12">
           Tools & Methodologies
         </h2>
         <div className="flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-green-500">
@@ -90,7 +90,7 @@ const RenewableEnergyPage = () => {
           ].map((item, idx) => (
             <div key={idx} className="flex-1 px-6 py-6 text-center">
               <h3 className="text-xl font-semibold text-green-800 mb-3">{item.title}</h3>
-              <p>{item.desc}</p>
+              <p className="sm:text-lg">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -137,7 +137,7 @@ const RenewableEnergyPage = () => {
               <h3 className="text-xl font-semibold text-green-700 mb-3">
                 {item.title}
               </h3>
-              <p className="text-gray-700">{item.desc}</p>
+              <p className="text-gray-700 sm:text-lg">{item.desc}</p>
             </div>
           ))}
         </div>
