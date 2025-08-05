@@ -12,9 +12,10 @@ import {
 } from "react-icons/fi";
 
 import heroImage from "@/public/images/D1.jpg";
-import sustainabilityImage from "@/public/images/D1.jpg";
-import energyGridImage from "@/public/images/D2.jpg";
-import communityImage from "@/public/images/D2.jpg";
+import sustainabilityImage from "@/public/images/D2.jpg";
+import energyGridImage from "@/public/images/D3.jpg";
+import communityImage from "@/public/images/D4.jpg";
+import Link from "next/link";
 
 const approach = [
   {
@@ -49,7 +50,7 @@ const marketPoints = [
       "Community demand for genuinely sustainable digital infrastructure",
       "Premium market positioning for green technology leaders",
     ],
-    image: energyGridImage,
+    image: sustainabilityImage,
   },
   {
     icon: FiAward,
@@ -61,7 +62,7 @@ const marketPoints = [
       "Crisis communications handles 'greenwashing' concerns",
       "Community engagement focuses on authentic environmental benefits",
     ],
-    image: sustainabilityImage,
+    image: energyGridImage,
   },
   {
     icon: FiGlobe,
@@ -140,7 +141,7 @@ export default function GreenDataPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-white text-[#2D3748]">
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden bg-black">
         <div
@@ -159,23 +160,26 @@ export default function GreenDataPage() {
       </section>
 
       {/* Approach */}
-      <section className="py-16 px-4 md:px-20 bg-muted/20 fade-section">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Sustainable Digital Infrastructure Community Engagement</h2>
-          <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
-            We help green data centers achieve community acceptance through authentic sustainability commitments,
-            combining deep renewable energy expertise with data center community relations to navigate the intersection
-            of digital growth and environmental responsibility.
+      <section className="py-20 px-4 md:px-20 bg-green-100 fade-section">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-green-700 mb-4">
+            Sustainable Digital Infrastructure Community Engagement
+          </h2>
+          <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-700">
+            We help green data centers achieve community acceptance through authentic sustainability commitments.
           </p>
         </div>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-3">
           {approach.map((item, index) => {
             const Icon = item.icon;
             return (
-              <div key={index} className="rounded-xl shadow-md p-6 bg-white">
-                {Icon && <Icon className="w-8 h-8 text-green-700 mb-4 mx-auto" />}
-                <h3 className="text-xl font-bold mb-2 text-center">{item.title}</h3>
-                <p className="text-lg md:text-xl text-gray-700 text-center">{item.description}</p>
+              <div
+                key={index}
+                className="rounded-xl border border-green-100 bg-white shadow-lg p-6 text-center"
+              >
+                <Icon className="w-10 h-10 text-green-700 mb-4 mx-auto" />
+                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                <p className="text-md text-gray-600">{item.description}</p>
               </div>
             );
           })}
@@ -183,35 +187,39 @@ export default function GreenDataPage() {
       </section>
 
       {/* Market Leadership */}
-      <section className="py-16 px-4 md:px-20 bg-white fade-section">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Market Leadership in Growing Sector</h2>
+      <section className="py-20 px-4 md:px-20 fade-section">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-green-700">
+            Market Leadership in Growing Sector
+          </h2>
         </div>
-        <div className="space-y-12">
+        <div className="space-y-16">
           {marketPoints.map((point, index) => {
             const Icon = point.icon;
             return (
               <div
                 key={index}
-                className={`flex flex-col md:flex-row ${index % 2 !== 0 ? "md:flex-row-reverse" : ""} items-center gap-8`}
+                className={`flex flex-col md:flex-row ${
+                  index % 2 !== 0 ? "md:flex-row-reverse" : ""
+                } items-center gap-8`}
               >
-                <div className="md:w-1/2">
+                <div className="md:w-1/2 ">
                   <Image
                     src={point.image}
                     alt={point.title}
-                    width={500}
-                    height={200}
+                    width={400}
+                    height={400}
                     className="rounded-xl"
                     placeholder="blur"
                   />
                 </div>
-                <div className="md:w-1/2">
-                  {Icon && <Icon className="w-8 h-8 mb-4 text-green-700 mx-auto" />}
-                  <h3 className="text-2xl font-semibold mb-2 text-center">{point.title}</h3>
-                  <p className="mb-4 text-lg md:text-xl text-gray-700 font-medium text-center">{point.description}</p>
-                  <ul className="list-disc list-inside space-y-1 text-lg text-left font-medium">
+                <div className="md:w-1/2 text-center md:text-left">
+                  <Icon className="w-10 h-10 mb-4 text-green-700 mx-auto md:mx-0" />
+                  <h3 className="text-2xl md:text-3xl font-semibold mb-2">{point.title}</h3>
+                  <p className="mb-4 text-md text-gray-700 font-medium">{point.description}</p>
+                  <ul className="list-disc list-inside text-md text-gray-800 space-y-1">
                     {point.points.map((p, i) => (
-                       <li key={i}>{p}</li>
+                      <li key={i}>{p}</li>
                     ))}
                   </ul>
                 </div>
@@ -222,49 +230,53 @@ export default function GreenDataPage() {
       </section>
 
       {/* Target Clients */}
-      <section className="py-16 px-4 md:px-20 bg-muted/10 fade-section">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Target Client Profile</h2>
+      <section className="py-20 px-4 md:px-20 bg-green-100 fade-section">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-green-800">Target Client Profile</h2>
         </div>
-        <div className="grid md:grid-cols-3 divide-x divide-gray-300">
+        <div className="grid md:grid-cols-3 gap-8">
           {clients.map((client, index) => (
-            <div key={index} className="px-6">
-              <h3 className="text-xl font-semibold mb-2 text-center">{client.title}</h3>
-              <p className="text-lg md:text-xl text-gray-700 text-center">{client.description}</p>
+            <div
+              key={index}
+              className="bg-white rounded-xl p-6 border border-green-200 shadow-md text-center"
+            >
+              <h3 className="text-xl font-semibold mb-2 text-green-700">{client.title}</h3>
+              <p className="text-md text-gray-700">{client.description}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Specialized Services */}
-      <section className="py-16 px-4 md:px-20 bg-gray-50 fade-section">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Specialized Services</h2>
+      {/* Services */}
+      <section className="py-20 px-4 md:px-20 bg-white fade-section">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-green-700">Specialized Services</h2>
         </div>
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-md p-6">
-              <h3 className="text-xl font-semibold mb-2 text-center">{service.title}</h3>
-              <p className="text-lg md:text-xl text-gray-700 font-medium text-center">{service.description}</p>
+            <div
+              key={index}
+              className="bg-green-50 border border-green-100 rounded-xl shadow p-6 text-center"
+            >
+              <h3 className="text-xl font-semibold mb-2 text-green-800">{service.title}</h3>
+              <p className="text-md text-gray-700">{service.description}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-4 md:px-20 text-center bg-green-700 fade-section">
-        <h2 className="text-3xl font-bold mb-4 text-white">
+      <section className="py-20 px-4 md:px-20 text-center bg-green-700 text-white fade-section">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Ready to Transform Your Green Data Strategy?
         </h2>
-        <p className="text-lg md:text-xl text-white mb-6">
+        <p className="text-lg md:text-xl mb-6">
           Let’s collaborate to create credible, impactful sustainability narratives.
         </p>
-        <button className="bg-primary text-white px-6 py-3 rounded-full hover:bg-primary/80 transition">
+        <Link href="/contact" className="bg-white text-green-700 px-6 py-3 rounded-full font-semibold hover:bg-green-100 transition">
           Contact Us
-        </button>
+        </Link>
       </section>
     </div>
   );
 }
-
-                     

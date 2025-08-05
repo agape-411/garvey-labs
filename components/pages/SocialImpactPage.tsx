@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import { Card, CardContent } from "../ui/card";
 import { Badge } from "../ui/badge";
 
-
 const useInView = () => {
   const ref = useRef<HTMLDivElement | null>(null);
   const [inView, setInView] = useState(false);
@@ -40,9 +39,9 @@ const SectionHeader = ({ children }: { children: React.ReactNode }) => {
   return (
     <h2
       ref={ref}
-      className={`text-4xl md:text-5xl font-bold text-center mb-16 transition-all duration-700 ease-out ${
+      className={`text-3xl md:text-5xl font-bold text-center mb-16 transition-all duration-700 ease-out ${
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      }`}
+      } text-red-700`}
     >
       {children}
     </h2>
@@ -58,7 +57,7 @@ const approach = [
   {
     title: "Voting Rights & Democracy",
     desc: "Message development and mobilization strategies for voting rights advocates and democracy reform organizations.",
-    image: "/images/S6.jpg",
+    image: "/images/SI7.png",
   },
   {
     title: "Movement Building",
@@ -76,7 +75,7 @@ const services = [
       "Intersectional storytelling approaches",
       "Campaign messaging for policy change",
     ],
-    color: "bg-gradient-primary",
+    image: "/images/Si1.png",
   },
   {
     title: "Crisis & Reputation Management",
@@ -86,7 +85,7 @@ const services = [
       "Stakeholder management strategies",
       "Post-crisis relationship rebuilding",
     ],
-    color: "bg-gradient-accent",
+    image: "/images/SI9.png",
   },
   {
     title: "Coalition & Movement Communications",
@@ -96,7 +95,7 @@ const services = [
       "Grassroots mobilization strategies",
       "Digital advocacy and online organizing",
     ],
-    color: "bg-gradient-primary",
+    image: "/images/SI8.png",
   },
 ];
 
@@ -104,89 +103,79 @@ const focusAreas = [
   {
     title: "Economic Justice",
     desc: "Communications for organizations working on income inequality, worker rights, and economic opportunity.",
-    image:
-      "/images/S5.png",
+    image: "/images/S5.png",
     badge: "Justice",
   },
   {
     title: "Racial Equity",
     desc: "Strategic messaging for civil rights organizations and racial justice advocacy groups.",
-    image:
-      "/images/S6.jpg",
+    image: "/images/SI2.png",
     badge: "Equity",
   },
   {
     title: "Voting Rights",
     desc: "Protecting and expanding democratic participation through strategic communications.",
-    image:
-      "/images/S5.png",
+    image: "/images/SI3.png",
     badge: "Democracy",
   },
   {
     title: "Democracy Reform",
     desc: "Supporting organizations working on election security, campaign finance, and democratic institutions.",
-    image:
-      "/images/S6.jpg",
+    image: "/images/SI5.png",
     badge: "Reform",
   },
 ];
 
 const SocialImpactPage = () => {
   return (
-    <div className="bg-background">
+    <div className="bg-white text-red-900">
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-neutral-950">
+      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-black/50">
         <img
-          src="/images/S5.png"
+          src="/images/SI5.png"
           alt="Social Impact Hero"
           className="absolute inset-0 w-full h-full object-cover opacity-30"
         />
         <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
           <FadeInOnScroll>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-primary-foreground">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
               Strategic Communications for
-              <span className="block bg-gradient-accent bg-clip-text text-primary-foreground">
+              <span className="block bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-red-700">
                 Social Impact
               </span>
             </h1>
           </FadeInOnScroll>
           <FadeInOnScroll>
-            <p className="text-2xl text-primary-foreground/90 max-w-3xl mx-auto">
-              Amplifying voices for social justice, equity, and democratic reform through powerful storytelling and strategic engagement
+            <p className="text-xl md:text-2xl text-red-100 max-w-3xl mx-auto">
+              Amplifying voices for social justice, equity, and democratic reform through powerful storytelling and strategic engagement.
             </p>
           </FadeInOnScroll>
           <FadeInOnScroll>
             <div className="mt-8 flex flex-wrap gap-4 justify-center">
-              <Badge variant="secondary" className="text-lg py-2 px-4">
-                Social Justice
-              </Badge>
-              <Badge variant="secondary" className="text-lg py-2 px-4">
-                Democracy
-              </Badge>
-              <Badge variant="secondary" className="text-lg py-2 px-4">
-                Equity
-              </Badge>
+              <Badge className="bg-red-100 text-red-800 text-lg py-2 px-4">Social Justice</Badge>
+              <Badge className="bg-red-100 text-red-800 text-lg py-2 px-4">Democracy</Badge>
+              <Badge className="bg-red-100 text-red-800 text-lg py-2 px-4">Equity</Badge>
             </div>
           </FadeInOnScroll>
         </div>
       </section>
 
       {/* Approach Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-secondary/20 to-accent/10">
+      <section className="py-20 px-6 bg-red-300">
         <div className="max-w-7xl mx-auto">
           <SectionHeader>Our Social Impact Approach</SectionHeader>
           <div className="grid md:grid-cols-3 gap-8">
             {approach.map((item, i) => (
               <FadeInOnScroll key={i}>
-                <Card className="h-full hover:shadow-strong transition-all duration-300 border-0 bg-card/80 backdrop-blur-sm">
+                <Card className="h-full border-0 shadow-md hover:shadow-xl transition duration-300 bg-white">
                   <img
                     src={item.image}
                     alt={item.title}
                     className="w-full h-48 object-cover"
                   />
                   <CardContent className="p-6">
-                    <h3 className="text-2xl font-bold mb-3 text-primary">{item.title}</h3>
-                    <p className="text-gray-600 text-lg leading-relaxed">{item.desc}</p>
+                    <h3 className="text-xl font-bold mb-3 text-red-700">{item.title}</h3>
+                    <p className="text-gray-700 text-base leading-relaxed">{item.desc}</p>
                   </CardContent>
                 </Card>
               </FadeInOnScroll>
@@ -195,61 +184,56 @@ const SocialImpactPage = () => {
         </div>
       </section>
 
-    {/* Services Section */}
-<section className="py-20 px-6 bg-gray-100">
-  <div className="max-w-7xl mx-auto">
-    <h2 className="text-3xl font-bold text-center mb-12">Our Social Impact Services</h2>
-
-    <div className="grid grid-cols-1 lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x divide-gray-700 rounded-xl overflow-hidden">
-      {services.map((item, i) => (
-        <div key={i} className="p-8">
-          <h3 className="text-2xl font-bold mb-4 text-primary">{item.title}</h3>
-          <ul className="space-y-3 pl-4 ">
-            {item.desc.map((point, j) => (
-              <li key={j} className="text-lg text-gray-600 list-disc">
-                {point}
-              </li>
+      {/* Services Section */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <SectionHeader>Our Social Impact Services</SectionHeader>
+          <div className="grid md:grid-cols-3 gap-10">
+            {services.map((item, i) => (
+              <FadeInOnScroll key={i}>
+                <Card className="h-full border-0 shadow-md hover:shadow-xl transition duration-300">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-80 object-cover"
+                  />
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-bold text-red-700 mb-4">{item.title}</h3>
+                    <ul className="space-y-2 pl-4 list-disc text-base text-gray-700">
+                      {item.desc.map((point, j) => (
+                        <li key={j}>{point}</li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              </FadeInOnScroll>
             ))}
-          </ul>
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
-
-
-
-
-
+      </section>
 
       {/* Focus Areas Section */}
-      <section className="py-20 px-6 bg-gradient-to-bl from-accent/10 to-secondary/20">
+      <section className="py-20 px-6 bg-red-300">
         <div className="max-w-7xl mx-auto">
           <SectionHeader>Focus Areas</SectionHeader>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {focusAreas.map((item, i) => (
               <FadeInOnScroll key={i}>
-                <Card className="h-full overflow-hidden hover:shadow-medium transition-all duration-300 border border-border/50">
+                <Card className="h-full overflow-hidden border shadow-sm hover:shadow-md transition duration-300">
                   <div className="relative h-[240px] overflow-hidden">
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                     <div className="absolute bottom-4 left-4">
-                      <Badge variant="secondary" className="bg-card/90 text-foreground shadow-sm">
-                        {item.badge}
-                      </Badge>
+                      <Badge className="bg-white/90 text-red-800 shadow-md">{item.badge}</Badge>
                     </div>
                   </div>
                   <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors">
-                      {item.title}
-                    </h3>
-                    <p className="text-gray-600text-lg leading-relaxed">
-                      {item.desc}
-                    </p>
+                    <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+                    <p className="text-gray-700 text-base leading-relaxed">{item.desc}</p>
                   </CardContent>
                 </Card>
               </FadeInOnScroll>

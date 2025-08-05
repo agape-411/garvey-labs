@@ -10,46 +10,49 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white text-gray-800 shadow-md sticky top-0 z-50 border-b border-gray-200">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-2 flex items-center justify-between py-3">
+    <header className="bg-white text-gray-800 shadow-md sticky top-0 z-50 border-b border-gray-200 h-20">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-0 flex items-center justify-start h-full">
         
-        {/* Logo Image */}
-        <Link href="/" className="flex items-center">
+        {/* Logo */}
+        <Link href="/" className="flex items-center h-full mr-6">
           <Image
             src="/images/logo.jpg"
             alt="Garvey Labs Logo"
-            width={220}
-            height={40}
-            className="h-20 w-40 object-contain"
+            width={280}
+            height={80}
+            className="h-full w-auto object-contain"
             priority
           />
         </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-6 items-center text-base font-medium">
-          <Link href="/" className="hover:text-blue-600 transition">Home</Link>
-          <Link href="/renewable-energy" className="hover:text-blue-600 transition">Renewable Energy</Link>
-          <Link href="/green-data" className="hover:text-blue-600 transition">Green Energy Data</Link>
-          <Link href="/labor-unions" className="hover:text-blue-600 transition">Labor Unions</Link>
-          <Link href="/social-impact" className="hover:text-blue-600 transition">Social Impact</Link>
-          <Link href="/about" className="hover:text-blue-600 transition">About</Link>
-        </nav>
+        {/* Right-side content (nav + button + menu) */}
+        <div className="flex flex-1 items-center justify-end space-x-4">
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex space-x-6 items-center text-base font-medium">
+            <Link href="/" className="hover:text-blue-600 transition">Home</Link>
+            <Link href="/renewable-energy" className="hover:text-blue-600 transition">Renewable Energy</Link>
+            <Link href="/green-data" className="hover:text-blue-600 transition">Green Energy Data</Link>
+            <Link href="/labor-unions" className="hover:text-blue-600 transition">Labor Unions</Link>
+            <Link href="/social-impact" className="hover:text-blue-600 transition">Social Impact</Link>
+            <Link href="/about" className="hover:text-blue-600 transition">About</Link>
+          </nav>
 
-        {/* Contact Button */}
-        <Link href="/contact" className="hidden md:block">
-          <Button className="bg-blue-600 text-white text-base px-5 py-2.5 rounded-lg hover:bg-blue-700 transition">
-            Contact Us
-          </Button>
-        </Link>
+          {/* Contact Button */}
+          <Link href="/contact" className="hidden md:block pl-6">
+            <Button className="bg-blue-600 text-white text-base px-6 py-2.5 rounded-lg hover:bg-blue-700 transition">
+              Contact Us
+            </Button>
+          </Link>
 
-        {/* Mobile Menu Toggle */}
-        <button
-          className="md:hidden text-2xl text-gray-700"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle Menu"
-        >
-          {menuOpen ? <HiX /> : <HiMenu />}
-        </button>
+          {/* Mobile Menu Toggle */}
+          <button
+            className="md:hidden text-[2.2rem] text-gray-700"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle Menu"
+          >
+            {menuOpen ? <HiX /> : <HiMenu />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
