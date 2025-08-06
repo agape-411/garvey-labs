@@ -29,7 +29,7 @@ const AboutPage = () => {
             Garvey Labs
           </span>
         </h1>
-        <p className="text-lg md:text-lg sm:text-lg text-white mb-8">
+        <p className="text-xl md:text-lg sm:text-lg text-white mb-8">
           Leading strategic communications and community engagement for
           positive change.
         </p>
@@ -106,7 +106,7 @@ const AboutPage = () => {
                   src={item.src}
                   alt={item.title}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500 "
                 />
                 <div className="absolute inset-0 flex items-end p-6 bg-gradient-to-t from-black/70 to-transparent">
                   <div>

@@ -95,53 +95,57 @@ const RenewableEnergyPage = () => {
           ))}
         </div>
 
-        {/* Image Gallery Section */}
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-          {["/images/RE8.png", "/images/RE6.png", "/images/R1.jpg", "/images/R6.png"].map((src, idx) => (
-            <div key={idx} className="w-full h-48 relative overflow-hidden rounded-xl shadow hover:shadow-lg transition duration-300">
-              <Image
-                src={src}
-                alt={`Energy Gallery ${idx + 1}`}
-                fill
-                className="object-cover"
-              />
-            </div>
-          ))}
-        </div>
+        
       </section>
 
       {/* Social Impact Services */}
       <section className="bg-white py-20 px-6 md:px-20">
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-green-700 mb-16">
-          Our Social Impact Services
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          {[
-            {
-              title: "Community Impact Strategy",
-              desc: "We design custom strategies to help organizations deliver measurable and lasting social benefits aligned with energy initiatives.",
-            },
-            {
-              title: "Cultural & Social Listening",
-              desc: "We use ethnographic tools and community dialogue to understand public sentiment and co-create solutions with residents.",
-            },
-            {
-              title: "Equity-Focused Engagement",
-              desc: "We develop targeted outreach campaigns and partnerships with historically underserved communities to promote inclusive participation.",
-            },
-          ].map((item, idx) => (
-            <div
-              key={idx}
-              className="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg hover:-translate-y-1 transition duration-300"
-            >
-              <h3 className="text-xl font-semibold text-green-700 mb-3">
-                {item.title}
-              </h3>
-              <p className="text-gray-700 sm:text-lg">{item.desc}</p>
+      <h2 className="text-4xl md:text-5xl font-bold text-center text-green-700 mb-16">
+        Project Types We Support
+      </h2>
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {[
+          {
+            title: "Solar Energy Projects",
+            desc: "Community Engagement for utility-scale and distributed solar developments.",
+            image: "/images/R4.png",
+          },
+          {
+            title: "Wind Energy Projects",
+            desc: "Stakeholder relations for onshore and offshore wind farm developments.",
+            image: "/images/RE6.png",
+          },
+          {
+            title: "Energy Storage",
+            desc: "Public involvement for battery storage and grid infrastructure projects.",
+            image: "/images/D2.jpg",
+          },
+          {
+            title: "Transmission Lines",
+            desc: "Community engagement for renewable energy transmission and distribution infrastructure.",
+            image: "/images/R1.jpg",
+          },
+        ].map((item, idx) => (
+          <div
+            key={idx}
+            className="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg hover:-translate-y-1 transition duration-300"
+          >
+            <h3 className="text-xl font-semibold text-green-700 mb-3">
+              {item.title}
+            </h3>
+            <p className="text-gray-700 sm:text-lg text-lg mb-4">{item.desc}</p>
+            <div className="w-full h-45 relative rounded-lg overflow-hidden">
+              <Image
+                src={item.image}
+                alt={item.title}
+                layout="fill"
+                objectFit="cover"
+              />
             </div>
-          ))}
-        </div>
-      </section>
+          </div>
+        ))}
+      </div>
+    </section>
     </div>
   );
 };

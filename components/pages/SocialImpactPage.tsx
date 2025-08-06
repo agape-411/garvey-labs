@@ -95,7 +95,7 @@ const services = [
       "Grassroots mobilization strategies",
       "Digital advocacy and online organizing",
     ],
-    image: "/images/SI8.png",
+    image: "/images/SP.jpg",
   },
 ];
 
@@ -103,7 +103,7 @@ const focusAreas = [
   {
     title: "Economic Justice",
     desc: "Communications for organizations working on income inequality, worker rights, and economic opportunity.",
-    image: "/images/S5.png",
+    image: "/images/ST.jpg",
     badge: "Justice",
   },
   {

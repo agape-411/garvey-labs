@@ -13,13 +13,13 @@ const servicesList = [
     title: "Sustainable Digital Infrastructure",
     description:
       "Community engagement and sustainability positioning for green data centers and digital infrastructure.",
-    href: "#",
+    href: "/green-data",
   },
   {
     title: "Strategic Communications",
     description:
       "Narrative building, storytelling, and message development for progressive organizations and labor unions.",
-    href: "/labor",
+    href: "/labor-unions",
   },
   {
     title: "Crisis Communications",

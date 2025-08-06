@@ -26,9 +26,6 @@ const Footer = () => {
               <Link href="/about" className="hover:text-white transition">About</Link>
             </li>
             <li>
-              <Link href="/services" className="hover:text-white transition">Services</Link>
-            </li>
-            <li>
               <Link href="/contact" className="hover:text-white transition">Contact</Link>
             </li>
           </ul>
@@ -39,7 +36,7 @@ const Footer = () => {
           <h4 className="text-lg font-semibold uppercase mb-4">Connect</h4>
           <div className="flex items-center space-x-4">
             <a
-              href="mailto:info@garveylabs.com"
+              href="mailto:contacts@garveylabs.com"
               aria-label="Email"
               className="hover:text-blue-400 text-gray-300 transition"
             >

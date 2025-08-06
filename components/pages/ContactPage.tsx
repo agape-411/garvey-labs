@@ -58,7 +58,7 @@ const ContactPage = () => {
               placeholder="Name *"
               value={form.name}
               onChange={handleChange}
-              className="p-3 border rounded w-full"
+              className="p-3 border rounded w-full text-lg"
             />
             <input
               name="organization"
@@ -66,7 +66,7 @@ const ContactPage = () => {
               placeholder="Organization"
               value={form.organization}
               onChange={handleChange}
-              className="p-3 border rounded w-full"
+              className="p-3 border rounded w-full text-lg"
             />
           </div>
 
@@ -78,7 +78,7 @@ const ContactPage = () => {
               placeholder="Email *"
               value={form.email}
               onChange={handleChange}
-              className="p-3 border rounded w-full"
+              className="p-3 border rounded w-full text-lg"
             />
             <input
               name="phone"
@@ -86,7 +86,7 @@ const ContactPage = () => {
               placeholder="Phone"
               value={form.phone}
               onChange={handleChange}
-              className="p-3 border rounded w-full"
+              className="p-3 border rounded w-full text-lg"
             />
           </div>
 
@@ -94,7 +94,7 @@ const ContactPage = () => {
             name="service"
             value={form.service}
             onChange={handleChange}
-            className="w-full p-3 border rounded bg-amber-50 dark:bg-gray-800"
+            className="w-full p-3 border rounded bg-amber-50 dark:bg-gray-800 text-lg"
           >
             <option value="">Select a service area</option>
             <option value="renewable-energy">Renewable Energy Community Engagement</option>
@@ -112,10 +112,10 @@ const ContactPage = () => {
             rows={6}
             value={form.message}
             onChange={handleChange}
-            className="w-full p-3 border rounded bg-amber-50"
+            className="w-full p-3 border rounded bg-amber-50 text-lg"
           />
 
-          <button type="submit" className="px-6 py-3 bg-black text-white rounded hover:bg-gray-800">
+          <button type="submit" className="px-6 py-3 bg-black text-white rounded hover:bg-gray-800 text-lg">
             Send Message
           </button>
         </form>

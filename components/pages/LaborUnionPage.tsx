@@ -8,7 +8,7 @@ import {
   CardTitle,
 } from "../ui/card";
 import heroImage from "@/public/images/L1.jpg";
-import empowermentImage from "@/public/images/L2.png";
+import empowermentImage from "@/public/images/L4.jpg";
 import mediaImage from "@/public/images/L3.png";
 import meetingImage from "@/public/images/LB2.jpg";
 import LB3 from "@/public/images/LB3.jpg";
