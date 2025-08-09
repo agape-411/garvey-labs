@@ -1,24 +1,81 @@
 "use client";
 
+import React from "react";
+
 export default function ConnectPage() {
+  const fields = [
+    { id: "name", label: "Name *", type: "text", required: true },
+    { id: "email", label: "Email *", type: "email", required: true },
+    { id: "phone", label: "Phone", type: "tel" },
+    {
+      id: "collaboration-type",
+      label: "Connection Interest",
+      type: "select",
+      options: [
+        "Select connection type",
+        "Freelance Project Work",
+        "Independent Consulting",
+        "Internship/Learning Opportunity",
+        "Strategic Partnership",
+        "Other",
+      ],
+    },
+    {
+      id: "expertise",
+      label: "Areas of Expertise",
+      type: "select",
+      options: [
+        "Select primary expertise",
+        "Strategic Communications",
+        "Community Engagement",
+        "Renewable Energy",
+        "Green Data Centers",
+        "Labor Relations",
+        "Social Impact/Justice",
+        "Crisis Communications",
+        "Other",
+      ],
+    },
+    {
+      id: "experience",
+      label: "Experience Level",
+      type: "select",
+      options: [
+        "Select experience level",
+        "Entry Level (0-2 years)",
+        "Mid-Level (3-7 years)",
+        "Senior Level (8+ years)",
+        "Executive/Leadership Level",
+      ],
+    },
+    {
+      id: "availability",
+      label: "Availability",
+      type: "select",
+      options: [
+        "Select availability",
+        "Available Immediately",
+        "Available in 2-4 weeks",
+        "Available in 1-3 months",
+        "Ongoing/Project Basis",
+      ],
+    },
+  ];
+
   return (
     <div className="bg-white text-[#2D3748] leading-relaxed">
       {/* Hero Section */}
       <header className="bg-gradient-to-r from-[#2C5282] to-[#1A365D] text-white py-16 px-6 text-center">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-tight">
-          Connect With Us
-        </h1>
-        <p className="text-[#E6FFFA] text-base sm:text-lg max-w-xl sm:max-w-2xl mx-auto leading-relaxed">
+        <h1 className="text-5xl font-bold mb-4">Connect With Us</h1>
+        <p className="text-[#E6FFFA] text-lg max-w-2xl mx-auto">
           Join our network of strategic communications and community engagement professionals
         </p>
       </header>
 
       {/* Intro */}
       <section className="max-w-5xl mx-auto px-6 py-12 border-b border-[#E2E8F0] bg-white">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#2C5282] mb-4 leading-snug">
-          Building a Network of Excellence
-        </h2>
-        <p className="text-base sm:text-lg max-w-prose leading-relaxed">
+        <h2 className="text-4xl font-semibold text-[#2C5282] mb-4">Building a Network of Excellence</h2>
+        <p>
           Garvey Labs works with talented freelancers, independent consultants, and emerging
           professionals who share our commitment to creating positive change. We're always
           interested in connecting with skilled practitioners who can contribute to our clients'
@@ -29,9 +86,7 @@ export default function ConnectPage() {
 
       {/* Ways to Connect */}
       <section className="max-w-5xl mx-auto px-6 py-12 border-b border-[#E2E8F0] bg-white">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#2C5282] mb-8 leading-snug">
-          Ways to Connect
-        </h2>
+        <h2 className="text-4xl font-semibold text-[#2C5282] mb-8">Ways to Connect</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {[
             {
@@ -55,8 +110,8 @@ export default function ConnectPage() {
               key={i}
               className="bg-white shadow-md p-6 rounded-lg hover:border-[#4299E1] border transition-all duration-200 hover:-translate-y-1"
             >
-              <h3 className="text-xl sm:text-2xl font-semibold text-[#2C5282] mb-3 leading-snug">{item.title}</h3>
-              <p className="text-base sm:text-lg leading-relaxed">{item.desc}</p>
+              <h3 className="text-2xl font-semibold text-[#2C5282] mb-3">{item.title}</h3>
+              <p>{item.desc}</p>
             </div>
           ))}
         </div>
@@ -64,9 +119,7 @@ export default function ConnectPage() {
 
       {/* Ideal Collaborators */}
       <section className="max-w-5xl mx-auto px-6 py-12 border-b border-[#E2E8F0] bg-[#EDF2F7]">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#2C5282] mb-8 leading-snug">
-          Who We're Looking For
-        </h2>
+        <h2 className="text-4xl font-semibold text-[#2C5282] mb-8">Who We're Looking For</h2>
         <div className="grid md:grid-cols-2 gap-8">
           {[
             {
@@ -107,8 +160,8 @@ export default function ConnectPage() {
             },
           ].map((group, i) => (
             <div key={i} className="border-l-4 border-[#2C5282] pl-4">
-              <h3 className="text-xl sm:text-2xl font-semibold text-[#2D3748] mb-3 leading-snug">{group.title}</h3>
-              <ul className="list-disc list-inside space-y-2 text-base sm:text-lg leading-relaxed">
+              <h3 className="text-2xl font-semibold text-[#2D3748] mb-3">{group.title}</h3>
+              <ul className="list-disc list-inside space-y-2">
                 {group.list.map((point, idx) => (
                   <li key={idx}>{point}</li>
                 ))}
@@ -120,9 +173,7 @@ export default function ConnectPage() {
 
       {/* How We Work Together */}
       <section className="max-w-5xl mx-auto px-6 py-12 border-b border-[#E2E8F0] bg-white">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#2C5282] mb-8 leading-snug">
-          How We Work Together
-        </h2>
+        <h2 className="text-4xl font-semibold text-[#2C5282] mb-8">How We Work Together</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {[
             {
@@ -142,8 +193,8 @@ export default function ConnectPage() {
               key={i}
               className="bg-white shadow-md p-6 rounded-lg hover:border-[#4299E1] border transition-all duration-200 hover:-translate-y-1"
             >
-              <h3 className="text-xl sm:text-2xl font-semibold text-[#2C5282] mb-3 leading-snug">{item.title}</h3>
-              <p className="text-base sm:text-lg leading-relaxed">{item.desc}</p>
+              <h3 className="text-2xl font-semibold text-[#2C5282] mb-3">{item.title}</h3>
+              <p>{item.desc}</p>
             </div>
           ))}
         </div>
@@ -151,9 +202,7 @@ export default function ConnectPage() {
 
       {/* Collaboration Values */}
       <section className="max-w-5xl mx-auto px-6 py-12 border-b border-[#E2E8F0] bg-[#EDF2F7]">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#2C5282] mb-8 leading-snug">
-          Our Collaboration Values
-        </h2>
+        <h2 className="text-4xl font-semibold text-[#2C5282] mb-8">Our Collaboration Values</h2>
         {[
           {
             title: "Mutual Respect & Professional Growth",
@@ -169,18 +218,16 @@ export default function ConnectPage() {
           },
         ].map((item, i) => (
           <div key={i} className="border-l-4 border-[#2C5282] pl-4 mb-6">
-            <h3 className="text-xl sm:text-2xl font-semibold text-[#2D3748] mb-2 leading-snug">{item.title}</h3>
-            <p className="text-base sm:text-lg leading-relaxed">{item.desc}</p>
+            <h3 className="text-2xl font-semibold text-[#2D3748] mb-2">{item.title}</h3>
+            <p>{item.desc}</p>
           </div>
         ))}
       </section>
 
       {/* Form */}
       <section className="max-w-5xl mx-auto px-6 py-12 bg-white">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#2C5282] mb-4 leading-snug">
-          Start the Conversation
-        </h2>
-        <p className="mb-6 text-base sm:text-lg leading-relaxed">
+        <h2 className="text-4xl font-semibold text-[#2C5282] mb-4">Start the Conversation</h2>
+        <p className="mb-6">
           Interested in exploring collaboration opportunities? We'd love to learn about your
           background, expertise, and interests. Please share information about your experience and
           how you might contribute to our work creating positive change.
@@ -192,76 +239,25 @@ export default function ConnectPage() {
           encType="text/plain"
           className="space-y-4"
         >
-          {[
-            { id: "name", label: "Name *", type: "text", required: true },
-            { id: "email", label: "Email *", type: "email", required: true },
-            { id: "phone", label: "Phone", type: "tel" },
-            {
-              id: "collaboration-type",
-              label: "Connection Interest",
-              type: "select",
-              options: [
-                "Select connection type",
-                "Freelance Project Work",
-                "Independent Consulting",
-                "Internship/Learning Opportunity",
-                "Strategic Partnership",
-                "Other",
-              ],
-            },
-            {
-              id: "expertise",
-              label: "Areas of Expertise",
-              type: "select",
-              options: [
-                "Select primary expertise",
-                "Strategic Communications",
-                "Community Engagement",
-                "Renewable Energy",
-                "Green Data Centers",
-                "Labor Relations",
-                "Social Impact/Justice",
-                "Crisis Communications",
-                "Other",
-              ],
-            },
-            {
-              id: "experience",
-              label: "Experience Level",
-              type: "select",
-              options: [
-                "Select experience level",
-                "Entry Level (0-2 years)",
-                "Mid-Level (3-7 years)",
-                "Senior Level (8+ years)",
-                "Executive/Leadership Level",
-              ],
-            },
-            {
-              id: "availability",
-              label: "Availability",
-              type: "select",
-              options: [
-                "Select availability",
-                "Available Immediately",
-                "Available in 2-4 weeks",
-                "Available in 1-3 months",
-                "Ongoing/Project Basis",
-              ],
-            },
-          ].map((field, i) => (
+          {fields.map((field, i) => (
             <div key={i}>
               <label htmlFor={field.id} className="block font-medium mb-1">
                 {field.label}
               </label>
-              {field.type === "select" ? (
+              {field.type === "select" && field.options ? (
                 <select
                   id={field.id}
                   name={field.id}
+                  defaultValue=""
                   className="w-full border border-[#E2E8F0] rounded-lg p-3 focus:outline-none focus:border-[#4299E1]"
                 >
                   {field.options.map((opt, idx) => (
-                    <option key={idx} value={opt.toLowerCase().replace(/\s+/g, "-")}>
+                    <option
+                      key={idx}
+                      value={idx === 0 ? "" : opt.toLowerCase().replace(/\s+/g, "-")}
+                      disabled={idx === 0}
+                      hidden={idx === 0}
+                    >
                       {opt}
                     </option>
                   ))}
