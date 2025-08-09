@@ -11,33 +11,36 @@ const Header = () => {
 
   return (
     <header className="bg-white text-gray-800 shadow-md sticky top-0 z-50 border-b border-gray-200 h-20">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-0 flex items-center justify-start h-full">
-        {/* Logo */}
-        <Link href="/" className="flex items-center h-full mr-6">
-          <Image
-            src="/images/logo.jpg"
-            alt="Garvey Labs Logo"
-            width={280}
-            height={80}
-            className="h-full w-auto object-contain"
-            priority
-          />
-        </Link>
+      <div className="max-w-6xl mx-auto px-3 sm:px-6 lg:px-0 h-full flex items-center justify-between w-full">
+        {/* Left - Logo */}
+        <div className="flex items-center h-full">
+          <Link href="/" className="flex items-center h-full">
+            <Image
+              src="/images/logo.jpg"
+              alt="Garvey Labs Logo"
+              width={280}
+              height={80}
+              className="h-full w-auto object-contain"
+              priority
+            />
+          </Link>
+        </div>
 
-        {/* Right-side content (nav + button + menu) */}
-        <div className="flex flex-1 items-center justify-end space-x-4">
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-6 items-center text-base font-medium">
-            <Link href="/" className="hover:text-blue-600 transition">Home</Link>
-            <Link href="/renewable-energy" className="hover:text-blue-600 transition">Renewable Energy</Link>
-            <Link href="/green-data" className="hover:text-blue-600 transition">Green Energy Data</Link>
-            <Link href="/labor-unions" className="hover:text-blue-600 transition">Labor Unions</Link>
-            <Link href="/social-impact" className="hover:text-blue-600 transition">Social Impact</Link>
-            <Link href="/about" className="hover:text-blue-600 transition">About</Link>
-          </nav>
+        {/* Center - Navigation */}
+        <nav className="hidden md:flex justify-center space-x-6 items-center text-base font-medium">
+          <Link href="/" className="hover:text-blue-600 transition">Home</Link>
+          <Link href="/renewable-energy" className="hover:text-blue-600 transition">Renewable Energy</Link>
+          <Link href="/green-data" className="hover:text-blue-600 transition">Green Energy Data</Link>
+          <Link href="/labor-unions" className="hover:text-blue-600 transition">Labor Unions</Link>
+          <Link href="/social-impact" className="hover:text-blue-600 transition">Social Impact</Link>
+          <Link href="/about" className="hover:text-blue-600 transition">About</Link>
+          <Link href="/news" className="hover:text-blue-600 transition">News</Link>
+          <Link href="/connect" className="hover:text-blue-600 transition">Connect</Link>
+        </nav>
 
-          {/* Contact Button */}
-          <Link href="/contact" className="hidden md:block pl-6">
+        {/* Right - Contact Button & Mobile Menu */}
+        <div className="flex items-center space-x-4">
+          <Link href="/contact" className="hidden md:block">
             <Button className="bg-blue-600 text-white text-base px-6 py-2.5 rounded-lg hover:bg-blue-700 transition">
               Contact Us
             </Button>
@@ -52,8 +55,6 @@ const Header = () => {
             {menuOpen ? <HiX /> : <HiMenu />}
           </button>
         </div>
-
-        {/* ✅ Missing closing tag for main wrapper ends here */}
       </div>
 
       {/* Mobile Menu */}
@@ -66,6 +67,8 @@ const Header = () => {
             <Link href="/labor-unions" onClick={() => setMenuOpen(false)} className="hover:text-blue-300">Labor Unions</Link>
             <Link href="/social-impact" onClick={() => setMenuOpen(false)} className="hover:text-blue-300">Social Impact</Link>
             <Link href="/about" onClick={() => setMenuOpen(false)} className="hover:text-blue-300">About</Link>
+            <Link href="/news" onClick={() => setMenuOpen(false)} className="hover:text-blue-300">News</Link>
+            <Link href="/connect" onClick={() => setMenuOpen(false)} className="hover:text-blue-300">Connect</Link>
             <Link href="/contact" onClick={() => setMenuOpen(false)} className="hover:text-blue-300">Contact</Link>
           </nav>
         </div>

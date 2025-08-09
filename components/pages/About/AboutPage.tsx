@@ -1,40 +1,36 @@
 "use client";
 
 import Image from "next/image";
-import { Card, CardContent } from "../ui/card";
-import { Badge } from "../ui/badge";
+import Link from "next/link";
+import { Card, CardContent } from "../../ui/card";
+import { Badge } from "../../ui/badge";
 
 const AboutPage = () => {
   return (
     <div className="bg-background text-gray-800 leading-relaxed">
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <Image
-        fill
-        src="/images/A5.png"
-        alt="About Hero"
-        className="absolute inset-0 w-full h-full object-cover z-0"
-        priority
-      />
-
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/50 z-10" />
-
-      {/* Text Content */}
-      <div className="relative z-20 text-center px-4 sm:px-6 max-w-4xl mx-auto">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight">
-          About{" "}
-          <span className="bg-gradient-accent bg-clip-text text-white">
-            Garvey Labs
-          </span>
-        </h1>
-        <p className="text-xl md:text-lg sm:text-lg text-white mb-8">
-          Leading strategic communications and community engagement for
-          positive change.
-        </p>
-      </div>
-    </section>
+        <Image
+          fill
+          src="/images/A5.png"
+          alt="About Hero"
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/50 z-10" />
+        <div className="relative z-20 text-center px-4 sm:px-6 max-w-4xl mx-auto">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight">
+            About{" "}
+            <span className="bg-gradient-accent bg-clip-text text-white">
+              Garvey Labs
+            </span>
+          </h1>
+          <p className="text-xl md:text-lg sm:text-lg text-white mb-8">
+            Leading strategic communications and community engagement for
+            positive change.
+          </p>
+        </div>
+      </section>
 
       {/* About Terry Section */}
       <section className="py-20 px-6 bg-gray-200">
@@ -76,38 +72,52 @@ const AboutPage = () => {
                   distinct challenges and opportunities.
                 </p>
               </div>
+
+              {/* Link to Terry Lee Profile Page */}
+              <div className="mt-8">
+                <Link
+                  href="/about/terry-lee"
+                  className="inline-block px-6 py-3 bg-primary text-white text-lg font-semibold rounded-lg shadow-md hover:bg-primary/90 transition-colors"
+                >
+                  View Full Profile
+                </Link>
+              </div>
             </div>
 
-           {/* Terry Lee Image */}
-          <div className="relative w-full h-80 sm:h-[400px] md:h-[600px] lg:h-[800px] rounded-2xl overflow-hidden">
-           <Image
-             src="/images/Terry.jpg"
-             alt="Terry Lee"
-             fill
-             className="object-cover"
-             />
-           <div className="absolute inset-0 bg-black/40 lg:hidden" />
-         </div>
-         </div>
-
+            {/* Terry Lee Image */}
+            <div className="relative w-full h-80 sm:h-[400px] md:h-[600px] lg:h-[800px] rounded-2xl overflow-hidden">
+              <Image
+                src="/images/Terry.jpg"
+                alt="Terry Lee"
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, 800px"
+  
+              />
+              <div className="absolute inset-0  lg:hidden" />
+            </div>
+          </div>
 
           {/* Visual Cards */}
-          <div className="grid md:grid-cols-3 gap-6 mb-4">
-            {[
-              { src: "/images/Ab1.jpg", label: "Strategy", title: "Strategic Planning" },
-              { src: "/images/AT1.jpg", label: "Engagement", title: "Community Building" },
-              { src: "/images/Ab3.jpg", label: "Communication", title: "Strategic Messaging" },
-            ].map((item, idx) => (
-              <div
-                key={idx}
-                className="relative h-[300px] rounded-xl shadow-lg overflow-hidden group"
-              >
-                <Image
-                  src={item.src}
-                  alt={item.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500 "
-                />
+         <div className="grid md:grid-cols-2 gap-6 mb-4">
+  {[
+    { src: "/images/Ab1.jpg", label: "Strategy", title: "Strategic Planning" },
+    { src: "/images/AT1.jpg", label: "Engagement", title: "Community Building" },
+  ].map((item, idx) => (
+    <div
+      key={idx}
+      className="relative w-full rounded-xl shadow-lg overflow-hidden group"
+      style={{ aspectRatio: '16 / 9' }} // Keeps 16:9 ratio responsive
+    >
+      <Image
+        src={item.src}
+        alt={item.title}
+        fill
+        className="object-cover group-hover:scale-105 transition-transform duration-500"
+        sizes="(max-width: 768px) 100vw, 50vw"
+      />
+    
+
                 <div className="absolute inset-0 flex items-end p-6 bg-gradient-to-t from-black/70 to-transparent">
                   <div>
                     <Badge variant="secondary" className="mb-1">

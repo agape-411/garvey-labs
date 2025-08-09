@@ -27,7 +27,7 @@ const HomeSection = () => {
           <h1 className="text-4xl md:text-7xl lg:text-7xl font-extrabold tracking-tight mb-6 text-white drop-shadow-lg">
             Garvey Labs
           </h1>
-          <p className="text-xl sm:text-xl md:text-xl lg:text-xl leading-relaxed max-w-3xl text-white drop-shadow-md">
+          <p className="text-xl sm:text-xl md:text-xl lg:text-xl leading-relaxed max-w-3xl text-white drop-shadow-md font-semibold">
             The Science of Strategic Communications & Public Affairs
           </p>
         </div>
