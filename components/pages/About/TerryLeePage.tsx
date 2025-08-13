@@ -110,15 +110,16 @@ export default function TerryLeePage() {
               className="text-xl md:text-2xl font-semibold mb-3"
               style={{ color: colors.textGray }}
             >
-              Leadership Roles: National Labor Union: Deputy National Director
-              for Communications (2020-2025)
+              Leadership Roles (2020-2025)
             </h3>
             <p className="mb-6 text-base sm:text-lg leading-relaxed max-w-4xl">
-              As deputy to the National Communications Director for America's
-              fastest-growing union, Terry oversees brand development, public
-              policy messaging, and strategic communications implementation
-              across earned media, paid media, digital platforms, and public
-              forums for 2 million members nationwide.
+              Terry Lee served in dual leadership capacities that uniquely positioned him at the intersection of labor
+              advocacy and renewable energy development. As Deputy National Director for Communications at America's fastest-growing union,
+              he oversaw brand development, public policy messaging, and strategic communications across earned media, paid media, digital platforms, 
+              and public forums for 2 million members nationwide. Simultaneously, his role as Strategic Advisor for Public Affairs and Community Engagement
+              for a large-scale renewable energy development provided critical insight into the community engagement challenges facing the deployment of clean energy.
+              This dual expertise enabled Terry to bridge the traditionally complex relationship between labor interests and renewable energy projects, creating communications
+              strategies that advanced both worker priorities and climate goals while building authentic community support for sustainable infrastructure development.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
