@@ -110,20 +110,20 @@ export default function NewsPage() {
     {
       id: 6,
       category: "news-coverage",
-      categoryLabel: "News Coverage",
+      categoryLabel: "Conferences and Summits",
       categoryClass: "bg-green-600",
-      imageSrc: "/images/clean-power.jpg",
-      imageAlt: "News Coverage Image",
+      imageSrc: "/images/summits.jpg",
+      imageAlt: "Conference Summit Image",
       title:
         "Renewable Energy Communications Expert Speaks at Clean Power Summit",
       excerpt:
-        'Terry Lee keynotes panel on "Community Engagement for Grid Modernization" at industry\'s premier conference...',
+        "Terry Lee will be speaker on Community Engagement for Grid Modernization at the industry's premier conference",
       meta: [
-        { label: "December 15, 2024" },
+        { label: "September 3, 2025" },
         { label: "Clean Energy Wire" },
       ],
       linkLabel: "View Coverage",
-      linkHref: "#",
+      linkHref: "https://web.cvent.com/event/6fd702f8-102e-46df-9d36-2780c2dea959/websitePage:d23ca711-ecda-48ba-af95-8e40e3c3f9d4",
     },
   ];
 
