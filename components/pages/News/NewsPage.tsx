@@ -1,10 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 export default function NewsPage() {
-
-  
   const [activeCategory, setActiveCategory] = useState("all");
 
   const categories = [
@@ -22,22 +21,24 @@ export default function NewsPage() {
       category: "press-release",
       categoryLabel: "Press Release",
       categoryClass: "bg-red-600",
+      imageSrc: "/images/press.png",
       imageAlt: "Press Release Image",
-      title: "Garvey Labs Announces Expansion of Green Data Center Community Engagement Services",
+      title: "BIG NEWS COMING SOON",
       excerpt:
-        "Leading strategic communications firm adds specialized practice area to support sustainable digital infrastructure development...",
+        "Coming soon..",
       meta: [
         { label: "January 10, 2025" },
         { label: "3 min read" },
       ],
       linkLabel: "Read More",
-      linkHref: "/news/beyond-nimby",
+      linkHref: "#",
     },
     {
       id: 2,
       category: "news-coverage",
       categoryLabel: "News Coverage",
       categoryClass: "bg-green-600",
+      imageSrc: "/images/news.jpg",
       imageAlt: "News Coverage Image",
       title:
         '"The Future of Labor Communications" - Terry Lee Featured in Union Today Magazine',
@@ -55,9 +56,10 @@ export default function NewsPage() {
       category: "thought-leadership",
       categoryLabel: "Thought Leadership",
       categoryClass: "bg-blue-700",
+      imageSrc: "/images/leadership.jpg",
       imageAlt: "Thought Leadership Image",
       title:
-        "Why Renewable Energy Projects Need Community Engagement Before Permitting",
+        "Beyond NIMBY: How Smart Communications Can Transform Renewable Energy Community Engagement",
       excerpt:
         "Early community engagement prevents costly delays and builds lasting support for clean energy development. Here's our proven framework...",
       meta: [
@@ -66,32 +68,34 @@ export default function NewsPage() {
         { label: "7 min read" },
       ],
       linkLabel: "Read Article",
-      linkHref: "#",
+      linkHref: "/news/beyond-nimby",
     },
     {
       id: 4,
       category: "case-studies",
       categoryLabel: "Case Study",
       categoryClass: "bg-orange-600",
+      imageSrc: "/images/case.jpg",
       imageAlt: "Case Study Image",
-      title:
-        "How Strategic Communications Secured Community Support for 150MW Solar Project",
+      title: "From No to Yes: Texas City BESS Success",
       excerpt:
-        "A detailed look at our community engagement strategy that transformed opposition into support for a major renewable energy development...",
+        "Strategic Community Engagement Transforms Opposition into Unanimous Approval...",
       meta: [
         { label: "December 28, 2024" },
         { label: "6 min read" },
       ],
       linkLabel: "View Case Study",
-      linkHref: "#",
+      linkHref: "/news/case-study",
     },
     {
       id: 5,
       category: "industry-insights",
       categoryLabel: "Industry Insights",
       categoryClass: "bg-purple-700",
+      imageSrc: "/images/industry.jpg",
       imageAlt: "Industry Insights Image",
-      title: "2025 Trends: Labor Communications in the Post-Pandemic Era",
+      title:
+        "The Future of Union Communication: Insights from the National Labor Management Conference",
       excerpt:
         "How the pandemic reshaped worker organizing and what communications strategies are driving successful campaigns today...",
       meta: [
@@ -100,13 +104,15 @@ export default function NewsPage() {
         { label: "8 min read" },
       ],
       linkLabel: "Read Insights",
-      linkHref: "#",
+      linkHref:
+        "https://ulanetwork.com/blog/the-future-of-union-communication-insights-from-the-national-labor-management-conference",
     },
     {
       id: 6,
       category: "news-coverage",
       categoryLabel: "News Coverage",
       categoryClass: "bg-green-600",
+      imageSrc: "/images/clean-power.jpg",
       imageAlt: "News Coverage Image",
       title:
         "Renewable Energy Communications Expert Speaks at Clean Power Summit",
@@ -121,7 +127,6 @@ export default function NewsPage() {
     },
   ];
 
-  // Filter articles by active category
   const filteredArticles =
     activeCategory === "all"
       ? articles
@@ -142,35 +147,39 @@ export default function NewsPage() {
 
       {/* Featured Post Section */}
       <section className="bg-gradient-to-br from-[#E0F2F1] to-[#E6FFFA] rounded-xl p-6 sm:p-8 md:p-12 mb-16">
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center">
-    <div className="md:col-span-2">
-      <span className="inline-block bg-[#319795] text-white px-3 py-1 rounded-full uppercase text-xs font-semibold tracking-wide">
-        Featured
-      </span>
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#2C5282] mt-6 leading-snug">
-        Building Community Support for Green Data Centers: A Strategic Framework
-      </h2>
-      <p className="mt-6 text-base sm:text-lg text-[#4A5568] leading-relaxed max-w-prose">
-        As the green data center market grows from $17B to $93B by 2032, community engagement becomes critical for project success. Here's how sustainable digital infrastructure can achieve authentic community acceptance...
-      </p>
-      <div className="flex flex-wrap gap-6 text-sm text-[#718096] mt-8 mb-12">
-        <span>By Terry Lee</span>
-        <span>January 15, 2025</span>
-        <span>5 min read</span>
-      </div>
-      <a
-        href="/news/green-datacenters-article"
-        className="inline-block bg-[#319795] hover:bg-[#2C7A7B] text-white font-semibold px-6 py-3 rounded-lg transition"
-      >
-        Read Full Article
-      </a>
-    </div>
-    <div className="bg-[#319795] rounded-lg h-64 sm:h-72 md:h-80 flex items-center justify-center text-white font-bold text-xl select-none mt-8 md:mt-0">
-      Featured Article Image
-    </div>
-  </div>
-</section>
-
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center">
+          <div className="md:col-span-2">
+            <span className="inline-block bg-[#319795] text-white px-3 py-1 rounded-full uppercase text-xs font-semibold tracking-wide">
+              Featured
+            </span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#2C5282] mt-6 leading-snug">
+              Building Community Support for Green Data Centers: A Strategic Framework
+            </h2>
+            <p className="mt-6 text-base sm:text-lg text-[#4A5568] leading-relaxed max-w-prose">
+              As the green data center market grows from $17B to $93B by 2032, community engagement becomes critical for project success. Here's how sustainable digital infrastructure can achieve authentic community acceptance...
+            </p>
+            <div className="flex flex-wrap gap-6 text-sm text-[#718096] mt-8 mb-12">
+              <span>By Terry Lee</span>
+              <span>January 15, 2025</span>
+              <span>5 min read</span>
+            </div>
+            <a
+              href="/news/green-datacenters-article"
+              className="inline-block bg-[#319795] hover:bg-[#2C7A7B] text-white font-semibold px-6 py-3 rounded-lg transition"
+            >
+              Read Full Article
+            </a>
+          </div>
+          <div className="relative w-full h-64 sm:h-72 md:h-80 rounded-lg overflow-hidden">
+            <Image
+              src="/images/leadership.jpg"
+              alt="Featured Article Image"
+              fill
+              className="object-cover"
+            />
+          </div>
+        </div>
+      </section>
 
       {/* Filter/Category Navigation */}
       <section className="mb-12 text-center">
@@ -205,6 +214,7 @@ export default function NewsPage() {
               category,
               categoryLabel,
               categoryClass,
+              imageSrc,
               imageAlt,
               title,
               excerpt,
@@ -217,8 +227,13 @@ export default function NewsPage() {
                 className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition transform hover:-translate-y-1"
                 data-category={category}
               >
-                <div className="relative h-48 bg-[#EDF2F7] flex items-center justify-center text-[#718096] font-semibold text-lg select-none">
-                  {imageAlt}
+                <div className="relative h-48 bg-[#EDF2F7] overflow-hidden">
+                  <Image
+                    src={imageSrc}
+                    alt={imageAlt}
+                    fill
+                    className="object-cover"
+                  />
                   <span
                     className={`post-category absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide text-white ${categoryClass}`}
                   >
@@ -252,7 +267,9 @@ export default function NewsPage() {
           <button
             type="button"
             className="bg-[#319795] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#2C7A7B] transition"
-            onClick={() => alert("Load more functionality would be implemented here")}
+            onClick={() =>
+              alert("Load more functionality would be implemented here")
+            }
           >
             Load More Articles
           </button>

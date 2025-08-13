@@ -2,7 +2,6 @@
 @import "tw-animate-css";
 
 
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -115,18 +114,33 @@
 @layer base {
   html,
   :host {
-    text-size-adjust: 100%; /* standard, works in Chrome, Firefox, Edge, Safari 13+ */
+    -webkit-text-size-adjust: 100%; /* prefix first */
+    text-size-adjust: 100%;         /* standard second */
+  }
+
+  [data-nextjs-dialog-backdrop] {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+
+  [data-nextjs-container-errors-pseudo-html-collapse='true']
+    .nextjs__container_errors__component-stack
+    code {
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      black 10%
+    );
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 10%);
+  }
+
+  .dev-tools-indicator-item {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  video[playsinline] {
+    -webkit-playsinline: playsinline;
   }
 }
-
-/* Only Safari & old WebKit browsers will use this */
-@supports (-webkit-touch-callout: none) {
-  html,
-  :host {
-    -webkit-text-size-adjust: 100%;
-  }
-}
-
-
-
 

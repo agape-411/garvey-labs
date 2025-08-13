@@ -49,21 +49,22 @@ export default function TerryLeePage() {
         {/* Inner centered content (this can keep mx-auto) */}
         <div className="relative px-6 py-16 sm:px-10 sm:py-24">
           <div className="max-w-6xl mx-auto text-center">
-            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold mb-3 leading-tight">
-              Terry Lee
-            </h1>
-            <p className="text-base sm:text-lg md:text-xl font-semibold mb-3">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-3 leading-tight">
+           Terry Lee
+          </h1>
+            <p className="text-lg sm:text-xl md:text-2xl font-semibold mb-3">
               Founder & Principal, Garvey Labs
             </p>
             <p
-              className="text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl mx-auto"
+              className="text-base sm:text-lg md:text-xl leading-relaxed max-w-3xl mx-auto"
               style={{ color: "#E6FFFA" }}
             >
-              25+ Years Leading Strategic Communications for Labor, Social Impact,
-              and Corporate Clients
+            25+ Years Leading Strategic Communications for Labor, Social Impact,
+            and Corporate Clients
             </p>
           </div>
         </div>
+
       </header>
 
       {/* PAGE CONTENT */}
@@ -365,7 +366,7 @@ export default function TerryLeePage() {
               },
               {
                 year: "1999-2000",
-                title: "Communications Specialist, Office of the Vice President",
+                title: "Communications Specialist, Office of the Vice President of the United States",
                 details: [
                   {
                     label: "Historic Role:",
