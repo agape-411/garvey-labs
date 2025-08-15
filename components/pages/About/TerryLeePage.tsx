@@ -326,7 +326,7 @@ export default function TerryLeePage() {
           text: "National brand development, policy messaging, executive communications, and crisis management.",
         },
       ],
-      image: "/images/M2.pNg",
+      image: "/images/M2.png",
     },
     {
       year: "2016-2020",
@@ -420,7 +420,7 @@ export default function TerryLeePage() {
           text: "Built expertise in purpose-driven communications and corporate social responsibility.",
         },
       ],
-      image: "/images/M1.pNg",
+      image: "/images/M1.png",
     },
   ].map(({ year, title, details, image }) => (
    <div
