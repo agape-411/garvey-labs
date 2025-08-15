@@ -106,21 +106,40 @@ export default function TerryLeePage() {
           </h2>
 
           <div>
-            <h3
-              className="text-xl md:text-2xl font-semibold mb-3"
-              style={{ color: colors.textGray }}
-            >
-              Leadership Roles (2020-2025)
-            </h3>
-            <p className="mb-6 text-base sm:text-lg leading-relaxed max-w-4xl">
-              Terry Lee served in dual leadership capacities that uniquely positioned him at the intersection of labor
-              advocacy and renewable energy development. As Deputy National Director for Communications at America's fastest-growing union,
-              he oversaw brand development, public policy messaging, and strategic communications across earned media, paid media, digital platforms, 
-              and public forums for 2 million members nationwide. Simultaneously, his role as Strategic Advisor for Public Affairs and Community Engagement
-              for a large-scale renewable energy development provided critical insight into the community engagement challenges facing the deployment of clean energy.
-              This dual expertise enabled Terry to bridge the traditionally complex relationship between labor interests and renewable energy projects, creating communications
-              strategies that advanced both worker priorities and climate goals while building authentic community support for sustainable infrastructure development.
-            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+    {/* LEFT COLUMN - TEXT */}
+    <div>
+      <h3
+        className="text-xl md:text-2xl font-semibold mb-3"
+        style={{ color: colors.textGray }}
+      >
+        Leadership Roles (2020-2025)
+      </h3>
+      <p className="text-base sm:text-lg leading-relaxed" style={{ color: colors.textGray }}>
+        Terry Lee served in dual leadership capacities that uniquely positioned him at the intersection of labor
+        advocacy and renewable energy development. As Deputy National Director for Communications at America's fastest-growing union,
+        he oversaw brand development, public policy messaging, and strategic communications across earned media, paid media, digital platforms, 
+        and public forums for 2 million members nationwide. Simultaneously, his role as Strategic Advisor for Public Affairs and Community Engagement
+        for a large-scale renewable energy development provided critical insight into the community engagement challenges facing the deployment of clean energy.
+        This dual expertise enabled Terry to bridge the traditionally complex relationship between labor interests and renewable energy projects, creating communications
+        strategies that advanced both worker priorities and climate goals while building authentic community support for sustainable infrastructure development.
+      </p>
+    </div>
+
+    {/* RIGHT COLUMN - IMAGES */}
+    <div className="flex flex-col gap-6 mb-13">
+      <img
+          src="/images/M6.jpg"
+           alt="Terry Lee speaking at an event"
+            className="w-full h-65 rounded-lg shadow-md object-cover"
+             />
+          <img
+            src="/images/M7.jpg"
+            alt="Renewable energy project site"
+            className="w-full h-65 rounded-lg shadow-md object-cover"
+          />
+            </div>
+          </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
@@ -288,129 +307,172 @@ export default function TerryLeePage() {
           </div>
 
           {/* Timeline */}
-          <div className="relative pl-6 sm:pl-8 border-l-2" style={{ borderColor: colors.primaryBlue }}>
-            {[
-              {
-                year: "2020-2025",
-                title: "Deputy National Director for Communications, SEIU",
-                details: [
-                  {
-                    label: "Impact:",
-                    text: "Leads strategic communications for 2 million member union during historic organizing wins and legislative victories.",
-                    color: colors.successGreen,
-                  },
-                  {
-                    label: "Scope:",
-                    text: "National brand development, policy messaging, executive communications, and crisis management.",
-                  },
-                ],
-              },
-              {
-                year: "2016-2020",
-                title: "Senior Director, Five Corners Strategies",
-                details: [
-                  {
-                    label: "Achievement:",
-                    text: "Directed national, state, and local regulatory campaigns for cannabis industry clients during explosive growth period.",
-                  },
-                  {
-                    label: "Value:",
-                    text: "Proved ability to navigate emerging industries, complex regulations, and diverse stakeholder coalitions.",
-                  },
-                ],
-              },
-              {
-                year: "2008-2013",
-                title: "Vice President, Walker Marchant Group",
-                details: [
-                  {
-                    label: "Clients:",
-                    text: "Eli Lilly, Novartis, Toyota Motors, Tyco International, Walgreens, Private Equity Council",
-                  },
-                  {
-                    label: "Expertise:",
-                    text: "Public policy communications, crisis management, and strategic counsel during challenging periods.",
-                  },
-                ],
-              },
-              {
-                year: "2005-2008",
-                title: "Director, Equals Three Communications",
-                details: [
-                  {
-                    label: "Innovation:",
-                    text: "Pioneered social media marketing and multicultural communications for Microsoft, AT&T, Cisco, and Coors.",
-                  },
-                  {
-                    label: "Leadership:",
-                    text: "Directed multicultural marketing practice during early adoption of digital strategies.",
-                  },
-                ],
-              },
-              {
-                year: "2000-2005",
-                title: "Government Communications Director, Executive Office of The Mayor, District of Columbia",
-                details: [
-                  {
-                    label: "Scope:",
-                    text: "Led communications for Deputy Mayor and nine agencies serving children, youth, families, and elders.",
-                  },
-                  {
-                    label: "Major Project:",
-                    text: "Directed citywide community engagement and public support campaign for the Washington Nationals Baseball Stadium development, securing DC City Council and Zoning Commission approvals in 2005.",
-                  },
-                  {
-                    label: "Experience:",
-                    text: "Large-scale infrastructure project approvals, government stakeholder management, community relations, public sector communications, and municipal policy advocacy.",
-                  },
-                ],
-              },
-              {
-                year: "1999-2000",
-                title: "Communications Specialist, Office of the Vice President of the United States",
-                details: [
-                  {
-                    label: "Historic Role:",
-                    text: "Developed community-based digital marketing programs in twelve empowerment zone cities.",
-                  },
-                  {
-                    label: "Innovation:",
-                    text: "Pioneered digital equity communications for Clinton Administration's Internet Access initiatives.",
-                  },
-                ],
-              },
-              {
-                year: "1996-2000",
-                title: "Senior Associate/Director, GMMB",
-                details: [
-                  {
-                    label: "Foundation:",
-                    text: "Directed corporate partnership and social marketing practices.",
-                  },
-                  {
-                    label: "Impact:",
-                    text: "Built expertise in purpose-driven communications and corporate social responsibility.",
-                  },
-                ],
-              },
-            ].map(({ year, title, details }) => (
-              <div key={year} className="flex flex-col md:flex-row mb-8 relative">
-                <div className="font-bold min-w-[120px] mr-6 mb-2 md:mb-0 text-sm sm:text-base" style={{ color: colors.primaryBlue }}>
-                  {year}
-                </div>
-                <div className="max-w-3xl">
-                  <h3 className="text-lg md:text-2xl font-semibold mb-2" style={{ color: colors.textGray }}>
-                    {title}
-                  </h3>
-                  {details.map(({ label, text, color }, i) => (
-                    <p key={i} className="mb-1 text-sm sm:text-base" style={{ color: color ?? colors.textGray }}>
-                      <strong>{label}</strong> {text}
-                    </p>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
+<div
+  className="relative pl-6 sm:pl-8 border-l-2"
+  style={{ borderColor: colors.primaryBlue }}
+>
+  {[
+    {
+      year: "2020-2025",
+      title: "Deputy National Director for Communications, SEIU",
+      details: [
+        {
+          label: "Impact:",
+          text: "Leads strategic communications for 2 million member union during historic organizing wins and legislative victories.",
+          color: colors.successGreen,
+        },
+        {
+          label: "Scope:",
+          text: "National brand development, policy messaging, executive communications, and crisis management.",
+        },
+      ],
+      image: "/images/M2.pNg",
+    },
+    {
+      year: "2016-2020",
+      title: "Senior Director, Five Corners Strategies",
+      details: [
+        {
+          label: "Achievement:",
+          text: "Directed national, state, and local regulatory campaigns for cannabis industry clients during explosive growth period.",
+        },
+        {
+          label: "Value:",
+          text: "Proved ability to navigate emerging industries, complex regulations, and diverse stakeholder coalitions.",
+        },
+      ],
+      image: "/images/M3.jpg",
+    },
+    {
+      year: "2008-2013",
+      title: "Vice President, Walker Marchant Group",
+      details: [
+        {
+          label: "Clients:",
+          text: "Eli Lilly, Novartis, Toyota Motors, Tyco International, Walgreens, Private Equity Council",
+        },
+        {
+          label: "Expertise:",
+          text: "Public policy communications, crisis management, and strategic counsel during challenging periods.",
+        },
+      ],
+      image: "/images/M4.jpg",
+    },
+    {
+      year: "2005-2008",
+      title: "Director, Equals Three Communications",
+      details: [
+        {
+          label: "Innovation:",
+          text: "Pioneered social media marketing and multicultural communications for Microsoft, AT&T, Cisco, and Coors.",
+        },
+        {
+          label: "Leadership:",
+          text: "Directed multicultural marketing practice during early adoption of digital strategies.",
+        },
+      ],
+      image: "/images/M13.jpg",
+    },
+    {
+      year: "2000-2005",
+      title: "Government Communications Director, Executive Office of The Mayor, District of Columbia",
+      details: [
+        {
+          label: "Scope:",
+          text: "Led communications for Deputy Mayor and nine agencies serving children, youth, families, and elders.",
+        },
+        {
+          label: "Major Project:",
+          text: "Directed citywide community engagement and public support campaign for the Washington Nationals Baseball Stadium development, securing DC City Council and Zoning Commission approvals in 2005.",
+        },
+        {
+          label: "Experience:",
+          text: "Large-scale infrastructure project approvals, government stakeholder management, community relations, public sector communications, and municipal policy advocacy.",
+        },
+      ],
+      image: "/images/M9.jpg",
+    },
+    {
+      year: "1999-2000",
+      title: "Communications Specialist, Office of the Vice President of the United States",
+      details: [
+        {
+          label: "Historic Role:",
+          text: "Developed community-based digital marketing programs in twelve empowerment zone cities.",
+        },
+        {
+          label: "Innovation:",
+          text: "Pioneered digital equity communications for Clinton Administration's Internet Access initiatives.",
+        },
+      ],
+      image: "/images/M11.jpg",
+    },
+    {
+      year: "1996-2000",
+      title: "Senior Associate/Director, GMMB",
+      details: [
+        {
+          label: "Foundation:",
+          text: "Directed corporate partnership and social marketing practices.",
+        },
+        {
+          label: "Impact:",
+          text: "Built expertise in purpose-driven communications and corporate social responsibility.",
+        },
+      ],
+      image: "/images/M1.pNg",
+    },
+  ].map(({ year, title, details, image }) => (
+   <div
+  key={year}
+  className="flex flex-col md:flex-row mb-8 relative gap-4"
+>
+  {/* Year - aligned to heading */}
+  <div
+    className="font-bold min-w-[120px] mr-6 mb-2 md:mb-0 text-sm sm:text-base flex items-start"
+    style={{ color: colors.primaryBlue }}
+  >
+    {year}
+  </div>
+
+  {/* Text and image side by side - centered vertically */}
+  <div className="flex flex-col md:flex-row md:gap-6 w-full md:items-center">
+    {/* Text content */}
+    <div className="flex-1 text-center md:text-left">
+      <h3
+        className="text-lg md:text-2xl font-semibold mb-2"
+        style={{ color: colors.textGray }}
+      >
+        {title}
+      </h3>
+      {details.map(({ label, text, color }, i) => (
+        <p
+          key={i}
+          className="mb-1 text-sm sm:text-base"
+          style={{ color: color ?? colors.textGray }}
+        >
+          <strong>{label}</strong> {text}
+        </p>
+      ))}
+    </div>
+
+    {/* Image */}
+    {image && (
+      <div className="md:w-1/3">
+        <img
+          src={image}
+          alt={`${title} photo`}
+          className="w-full h-auto rounded-lg shadow-md object-cover"
+        />
+      </div>
+    )}
+  </div>
+</div>
+
+
+  ))}
+</div>
+
         </section>
 
         {/* THE GARVEY LABS ADVANTAGE */}
