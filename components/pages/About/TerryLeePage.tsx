@@ -1,6 +1,97 @@
 "use client";
 
 import React from "react";
+import { FaBalanceScale, FaBriefcase, FaLandmark, FaUsers } from "react-icons/fa";
+import { JSX } from "react/jsx-dev-runtime";
+
+
+
+
+import {
+  FaProjectDiagram,
+  FaShieldAlt,
+  FaLightbulb,
+  FaHandshake,
+} from "react-icons/fa";
+
+const colors = {
+  primaryBlue: "#4299E1",
+  textGray: "#4A5568",
+};
+
+type Advantage = {
+  id: string;
+  title: string;
+  desc: string;
+  icon: JSX.Element;
+};
+
+const advantages: Advantage[] = [
+  {
+    id: "stakeholder-navigation",
+    title: "Stakeholder Navigation Expertise",
+    desc: "Terry's unique career path—from corporate boardrooms to union halls to government offices—enables him to understand and bridge diverse stakeholder perspectives that would challenge other consultants. This cross-sector experience is essential for complex projects involving multiple constituencies.",
+    icon: <FaProjectDiagram className="text-[#4299E1] text-3xl mb-3" />,
+  },
+  {
+    id: "crisis-management",
+    title: "Crisis Prevention & Management",
+    desc: "Extensive experience managing high-stakes communications for Fortune 500 companies, labor disputes, and regulatory challenges. Terry's approach focuses on proactive communications that prevent crises while maintaining readiness for rapid response when needed.",
+    icon: <FaShieldAlt className="text-[#4299E1] text-3xl mb-3" />,
+  },
+  {
+    id: "policy-communications",
+    title: "Policy Communications That Drive Outcomes",
+    desc: "Deep expertise in translating complex policy issues into compelling public communications. From cannabis regulation to labor rights to digital equity, Terry has successfully influenced policy outcomes through strategic messaging and stakeholder engagement.",
+    icon: <FaBalanceScale className="text-[#4299E1] text-3xl mb-3" />,
+  },
+  {
+    id: "innovation-engagement",
+    title: "Innovation in Community Engagement",
+    desc: "Early pioneer in social media marketing, multicultural communications, and digital equity initiatives. Brings innovative approaches to traditional community engagement challenges, particularly in renewable energy and infrastructure development.",
+    icon: <FaLightbulb className="text-[#4299E1] text-3xl mb-3" />,
+  },
+  {
+    id: "authentic-relationships",
+    title: "Authentic Relationship Building",
+    desc: "From empowerment zone communities to C-suites to union organizing committees, Terry builds genuine relationships that enable effective communications and sustainable outcomes. This authenticity is crucial for long-term project success.",
+    icon: <FaHandshake className="text-[#4299E1] text-3xl mb-3" />,
+  },
+];
+
+type Differentiator = {
+  id: string;
+  title: string;
+  desc: string;
+  icon: JSX.Element;
+};
+
+const differentiators: Differentiator[] = [
+  {
+    id: "labor-authority",
+    title: "Labor Authority",
+    desc: "Senior leadership role at SEIU provides authentic credibility in labor communications, worker organizing, and union-management relations that generic consultants lack.",
+    icon: <FaUsers className="text-[#4299E1] text-3xl mb-3" />,
+  },
+  {
+    id: "corporate-credibility",
+    title: "Corporate Credibility",
+    desc: "Proven track record providing strategic counsel to Fortune 500 clients including Microsoft, AT&T, Toyota, Eli Lilly, and Novartis during high-stakes situations.",
+    icon: <FaBriefcase className="text-[#4299E1] text-3xl mb-3" />,
+  },
+  {
+    id: "government-experience",
+    title: "Government Experience",
+    desc: "Federal and local government communications experience, including the Office of the Vice President and DC Government leadership roles.",
+    icon: <FaLandmark className="text-[#4299E1] text-3xl mb-3" />,
+  },
+  {
+    id: "regulatory-expertise",
+    title: "Regulatory Expertise",
+    desc: "Successfully managed complex regulatory and legislative campaigns across multiple industries during periods of rapid change and stakeholder conflict.",
+    icon: <FaBalanceScale className="text-[#4299E1] text-3xl mb-3" />,
+  },
+];
 
 export default function TerryLeePage() {
   // Custom colors
@@ -214,50 +305,39 @@ export default function TerryLeePage() {
         </section>
 
         {/* KEY DIFFERENTIATORS */}
-        <section className="mb-14">
-          <h2
-            className="text-2xl md:text-4xl font-semibold mb-6"
-            style={{ color: colors.primaryBlue }}
-          >
-            What Sets Terry Apart
-          </h2>
+         <section className="py-16 px-6 bg-gray-50">
+      <div className="max-w-7xl mx-auto">
+        <h2
+          className="text-2xl md:text-4xl font-bold mb-10 text-center"
+          style={{ color: colors.primaryBlue }}
+        >
+          What Sets Me Apart
+        </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              [
-                "Labor Authority",
-                "Senior leadership role at SEIU provides authentic credibility in labor communications, worker organizing, and union-management relations that generic consultants lack.",
-              ],
-              [
-                "Corporate Credibility",
-                "Proven track record providing strategic counsel to Fortune 500 clients including Microsoft, AT&T, Toyota, Eli Lilly, and Novartis during high-stakes situations.",
-              ],
-              [
-                "Government Experience",
-                "Federal and local government communications experience, including the Office of the Vice President and DC Government leadership roles.",
-              ],
-              [
-                "Regulatory Expertise",
-                "Successfully managed complex regulatory and legislative campaigns across multiple industries during periods of rapid change and stakeholder conflict.",
-              ],
-            ].map(([title, desc]) => (
-              <div
-                key={title}
-                className="bg-white rounded-md shadow-md p-6 border border-transparent hover:border-[#4299E1] transition-colors"
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {differentiators.map(({ id, title, desc, icon }) => (
+            <div
+              key={id}
+              className="bg-white rounded-md shadow-md p-6 border border-transparent hover:border-[#4299E1] transition-colors flex flex-col items-center text-center"
+            >
+              {icon}
+              <h3
+                className="text-lg md:text-2xl font-semibold mb-3"
+                style={{ color: colors.primaryBlue }}
               >
-                <h3
-                  className="text-lg md:text-2xl font-semibold mb-3"
-                  style={{ color: colors.primaryBlue }}
-                >
-                  {title}
-                </h3>
-                <p className="text-sm sm:text-base" style={{ color: colors.textGray }}>
-                  {desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
+                {title}
+              </h3>
+              <p
+                className="text-sm sm:text-base leading-relaxed"
+                style={{ color: colors.textGray }}
+              >
+                {desc}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
 
         {/* CAREER TRAJECTORY + CAREER OVERVIEW CARDS */}
         <section className="mb-14">
@@ -477,50 +557,45 @@ export default function TerryLeePage() {
 
         {/* THE GARVEY LABS ADVANTAGE */}
         <section className="mb-14">
-          <h2 className="text-2xl md:text-4xl font-semibold mb-6" style={{ color: colors.primaryBlue }}>
-            The Garvey Labs Advantage
-          </h2>
+      <h2
+        className="text-2xl md:text-4xl font-semibold mb-6"
+        style={{ color: colors.primaryBlue }}
+      >
+        The Garvey Labs Advantage
+      </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            {[
-              [
-                "Stakeholder Navigation Expertise",
-                "Terry's unique career path—from corporate boardrooms to union halls to government offices—enables him to understand and bridge diverse stakeholder perspectives that would challenge other consultants. This cross-sector experience is essential for complex projects involving multiple constituencies.",
-              ],
-              [
-                "Crisis Prevention & Management",
-                "Extensive experience managing high-stakes communications for Fortune 500 companies, labor disputes, and regulatory challenges. Terry's approach focuses on proactive communications that prevent crises while maintaining readiness for rapid response when needed.",
-              ],
-              [
-                "Policy Communications That Drive Outcomes",
-                "Deep expertise in translating complex policy issues into compelling public communications. From cannabis regulation to labor rights to digital equity, Terry has successfully influenced policy outcomes through strategic messaging and stakeholder engagement.",
-              ],
-              [
-                "Innovation in Community Engagement",
-                "Early pioneer in social media marketing, multicultural communications, and digital equity initiatives. Brings innovative approaches to traditional community engagement challenges, particularly in renewable energy and infrastructure development.",
-              ],
-              [
-                "Authentic Relationship Building",
-                "From empowerment zone communities to C-suites to union organizing committees, Terry builds genuine relationships that enable effective communications and sustainable outcomes. This authenticity is crucial for long-term project success.",
-              ],
-            ].map(([title, desc], idx, arr) => {
-              const isLast = idx === arr.length - 1;
-              return (
-                <div
-                  key={title}
-                  className={`border border-gray-300 rounded-lg p-6 ${isLast ? "md:col-span-2 flex flex-col items-center text-center" : ""}`}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        {advantages.map(({ id, title, desc, icon }, idx, arr) => {
+          const isLast = idx === arr.length - 1;
+          return (
+            <div
+              key={id}
+              className={`border border-gray-300 rounded-lg p-6 ${
+                isLast
+                  ? "md:col-span-2 flex flex-col items-center text-center"
+                  : ""
+              }`}
+            >
+              <div className="flex flex-col items-center text-center">
+                {icon}
+                <h3
+                  className="text-xl md:text-2xl font-semibold mb-2"
+                  style={{ color: colors.primaryBlue }}
                 >
-                  <h3 className="text-xl md:text-2xl font-semibold mb-2" style={{ color: colors.primaryBlue }}>
-                    {title}
-                  </h3>
-                  <p className="text-sm sm:text-base leading-relaxed" style={{ color: colors.textGray }}>
-                    {desc}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-        </section>
+                  {title}
+                </h3>
+              </div>
+              <p
+                className="text-sm sm:text-base leading-relaxed"
+                style={{ color: colors.textGray }}
+              >
+                {desc}
+              </p>
+            </div>
+          );
+        })}
+      </div>
+    </section>
 
         {/* PHILOSOPHY */}
         <section className="mb-14">
