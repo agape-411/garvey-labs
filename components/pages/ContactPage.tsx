@@ -50,7 +50,7 @@ const ContactPage = () => {
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-6">
-          <div className="grid md:grid-cols-2 gap-4 bg-amber-50">
+          <div className="grid md:grid-cols-2 gap-4">
             <input
               name="name"
               type="text"
@@ -58,7 +58,7 @@ const ContactPage = () => {
               placeholder="Name *"
               value={form.name}
               onChange={handleChange}
-              className="p-3 border rounded w-full text-lg"
+              className="w-full p-3 border rounded bg-amber-50 dark:bg-gray-800 text-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
             />
             <input
               name="organization"
@@ -66,11 +66,11 @@ const ContactPage = () => {
               placeholder="Organization"
               value={form.organization}
               onChange={handleChange}
-              className="p-3 border rounded w-full text-lg"
+              className="w-full p-3 border rounded bg-amber-50 dark:bg-gray-800 text-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
             />
           </div>
 
-          <div className="grid md:grid-cols-2 gap-4 bg-amber-50">
+          <div className="grid md:grid-cols-2 gap-4">
             <input
               name="email"
               type="email"
@@ -78,7 +78,7 @@ const ContactPage = () => {
               placeholder="Email *"
               value={form.email}
               onChange={handleChange}
-              className="p-3 border rounded w-full text-lg"
+              className="w-full p-3 border rounded bg-amber-50 dark:bg-gray-800 text-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
             />
             <input
               name="phone"
@@ -86,24 +86,29 @@ const ContactPage = () => {
               placeholder="Phone"
               value={form.phone}
               onChange={handleChange}
-              className="p-3 border rounded w-full text-lg"
+              className="w-full p-3 border rounded bg-amber-50 dark:bg-gray-800 text-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
             />
           </div>
 
-          <select
-            name="service"
-            value={form.service}
-            onChange={handleChange}
-            className="w-full p-3 border rounded bg-amber-50 dark:bg-gray-800 text-lg"
-          >
-            <option value="">Select a service area</option>
-            <option value="renewable-energy">Renewable Energy Community Engagement</option>
-            <option value="green-data-centers">Green Data Centers & Digital</option>
-            <option value="labor">Labor Union Communications</option>
-            <option value="social-impact">Social Impact Organizations</option>
-            <option value="crisis">Crisis Communications</option>
-            <option value="other">Other</option>
-          </select>
+          <div className="relative">
+            <select
+              name="service"
+              value={form.service}
+              onChange={handleChange}
+              className="w-full p-3 pr-10 border rounded bg-amber-50 dark:bg-gray-800 text-lg appearance-none focus:ring-2 focus:ring-green-500 focus:outline-none"
+            >
+              <option value="">Select a service area</option>
+              <option value="renewable-energy">Renewable Energy Community Engagement</option>
+              <option value="green-data-centers">Green Data Centers & Digital</option>
+              <option value="labor">Labor Union Communications</option>
+              <option value="social-impact">Social Impact Organizations</option>
+              <option value="crisis">Crisis Communications</option>
+              <option value="other">Other</option>
+            </select>
+            <span className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500">
+              ▼
+            </span>
+          </div>
 
           <textarea
             name="message"
@@ -112,10 +117,13 @@ const ContactPage = () => {
             rows={6}
             value={form.message}
             onChange={handleChange}
-            className="w-full p-3 border rounded bg-amber-50 text-lg"
+            className="w-full p-3 border rounded bg-amber-50 dark:bg-gray-800 text-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
           />
 
-          <button type="submit" className="px-6 py-3 bg-black text-white rounded hover:bg-gray-800 text-lg">
+          <button
+            type="submit"
+            className="px-6 py-3 bg-black text-white rounded hover:bg-gray-800 text-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
+          >
             Send Message
           </button>
         </form>
@@ -137,7 +145,7 @@ const ContactPage = () => {
 
           <div className="bg-white dark:bg-gray-900 border p-6 rounded text-center hover:bg-green-500">
             <h3 className="text-lg font-medium">Location</h3>
-            <p className="mt-2 text-lg">Washington, DC</p>
+            <p className="mt-2 text-lg">14 Ridge Square NW, 3rd Floor, Washington, DC 20016</p>
           </div>
         </div>
       </section>
