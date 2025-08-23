@@ -4,9 +4,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent } from "../../ui/card";
 import { Badge } from "../../ui/badge";
+import SEO from "@/components/SEO";
 
 const AboutPage = () => {
   return (
+    <>
+    <SEO
+        title="About Us | Garvey Labs"
+        description="Discover Garvey Labs' mission to create impact-driven innovations in technology, renewable energy, and society."
+        url="https://www.garveylabs.com/about"
+      />
     <div className="bg-background text-gray-800 leading-relaxed">
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
@@ -212,7 +219,9 @@ const AboutPage = () => {
         </div>
       </section>
     </div>
+    </>
   );
+  
 };
 
 export default AboutPage;
