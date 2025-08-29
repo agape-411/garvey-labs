@@ -11,7 +11,7 @@ const Footer = () => {
         <div>
           <h3 className="text-2xl font-bold mb-3">Garvey Labs</h3>
           <p className="text-md leading-relaxed text-gray-300">
-            Strategic Communications & Community Engagement for social impact and renewable energy organizations.
+            Strategic Communications & Civic Engagement for social impact and renewable energy organizations.
           </p>
         </div>
 
