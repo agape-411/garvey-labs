@@ -8,7 +8,7 @@ const practiceAreas = [
     title: "Sustainable Renewable Energy Developments",
     description:
       "We help renewable energy developers engage with local communities, ensuring long-term success and social license to operate.",
-    subtext: "Community engagement for clean energy projects",
+    subtext: "Civic engagement for clean energy projects",
     image: "/images/R1.jpg",
   },
   {

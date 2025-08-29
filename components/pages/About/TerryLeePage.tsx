@@ -47,7 +47,7 @@ const advantages: Advantage[] = [
   },
   {
     id: "innovation-engagement",
-    title: "Innovation in Community Engagement",
+    title: "Innovation in Civic Engagement",
     desc: "Early pioneer in social media marketing, multicultural communications, and digital equity initiatives. Brings innovative approaches to traditional community engagement challenges, particularly in renewable energy and infrastructure development.",
     icon: <FaLightbulb className="text-[#4299E1] text-3xl mb-3" />,
   },
@@ -175,7 +175,7 @@ export default function TerryLeePage() {
             trajectory—from the Office of the Vice President to Deputy National
             Director for Communications at SEIU—provides unparalleled insight
             into the intersection of strategic communications, public policy,
-            and community engagement.
+            and civic engagement.
           </p>
           <p className="text-base sm:text-lg leading-relaxed max-w-4xl">
             This diverse background enables Terry to understand and navigate
@@ -210,8 +210,8 @@ export default function TerryLeePage() {
         Terry Lee served in dual leadership capacities that uniquely positioned him at the intersection of labor
         advocacy and renewable energy development. As Deputy National Director for Communications at America's fastest-growing union,
         he oversaw brand development, public policy messaging, and strategic communications across earned media, paid media, digital platforms, 
-        and public forums for 2 million members nationwide. Simultaneously, his role as Strategic Advisor for Public Affairs and Community Engagement
-        for a large-scale renewable energy development provided critical insight into the community engagement challenges facing the deployment of clean energy.
+        and public forums for 2 million members nationwide. Simultaneously, his role as Strategic Advisor for Civic Engagement
+        for a large-scale renewable energy development provided critical insight into the political and community engagement challenges facing the deployment of clean energy.
         This dual expertise enabled Terry to bridge the traditionally complex relationship between labor interests and renewable energy projects, creating communications
         strategies that advanced both worker priorities and climate goals while building authentic community support for sustainable infrastructure development.
       </p>
@@ -463,11 +463,11 @@ export default function TerryLeePage() {
         },
         {
           label: "Major Project:",
-          text: "Directed citywide community engagement and public support campaign for the Washington Nationals Baseball Stadium development, securing DC City Council and Zoning Commission approvals in 2005.",
+          text: "Directed citywide civic engagement and public support campaign for the Washington Nationals Baseball Stadium development, securing DC City Council and Zoning Commission approvals in 2005.",
         },
         {
           label: "Experience:",
-          text: "Large-scale infrastructure project approvals, government stakeholder management, community relations, public sector communications, and municipal policy advocacy.",
+          text: "Large-scale infrastructure project approvals, government stakeholder management, civic engagement, public sector communications, and municipal policy advocacy.",
         },
       ],
       image: "/images/M9.jpg",
@@ -635,7 +635,7 @@ export default function TerryLeePage() {
             Terry founded Garvey Labs to apply his diverse experience to the organizations and challenges that matter most in our current moment: accelerating renewable energy development, building sustainable digital infrastructure, strengthening worker power, and advancing social justice.
           </p>
           <p className="mb-6 text-sm sm:text-base leading-relaxed italic" style={{ color: colors.textGray }}>
-            "We're at a critical inflection point where the success of these vital initiatives depends on sophisticated communications and genuine community engagement. Generic consultancies don't understand the nuanced stakeholder dynamics involved in these sectors. Garvey Labs brings the specific expertise, authentic relationships, and proven methodologies needed to navigate these challenges successfully."
+            "We're at a critical inflection point where the success of these vital initiatives depends on sophisticated communications and genuine civic engagement. Generic consultancies don't understand the nuanced stakeholder dynamics involved in these sectors. Garvey Labs brings the specific expertise, authentic relationships, and proven methodologies needed to navigate these challenges successfully."
           </p>
 
           <div>
@@ -644,7 +644,7 @@ export default function TerryLeePage() {
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm sm:text-base">
               {[
-                ["Renewable Energy", "Accelerating clean energy deployment through effective community engagement"],
+                ["Renewable Energy", "Accelerating clean energy deployment through effective civic engagement"],
                 ["Green Data Centers", "Positioning sustainable digital infrastructure for community acceptance"],
                 ["Labor Organizing", "Centering worker voices in an era of renewed union strength"],
                 ["Social Impact", "Advancing justice and equity through strategic communications"],
@@ -673,7 +673,7 @@ export default function TerryLeePage() {
                 Discuss Your Project
               </h3>
               <p className="mb-4 text-md sm:text-md" style={{ color: colors.textGray }}>
-                Schedule a consultation to explore how Garvey Labs can support your strategic communications and community engagement needs.
+                Schedule a consultation to explore how Garvey Labs can support your strategic communications and civic engagement needs.
               </p>
               <a href="/contact" className="inline-block bg-[#4299E1] hover:bg-[#2C5282] text-white font-semibold py-2 px-6 rounded transition">
                 Get in Touch

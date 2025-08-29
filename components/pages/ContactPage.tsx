@@ -98,7 +98,7 @@ const ContactPage = () => {
               className="w-full p-3 pr-10 border rounded bg-amber-50 dark:bg-gray-800 text-lg appearance-none focus:ring-2 focus:ring-green-500 focus:outline-none"
             >
               <option value="">Select a service area</option>
-              <option value="renewable-energy">Renewable Energy Community Engagement</option>
+              <option value="renewable-energy">Renewable Energy Civic Engagement</option>
               <option value="green-data-centers">Green Data Centers & Digital</option>
               <option value="labor">Labor Union Communications</option>
               <option value="social-impact">Social Impact Organizations</option>

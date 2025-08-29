@@ -33,7 +33,7 @@ const AboutPage = () => {
             </span>
           </h1>
           <p className="text-xl md:text-lg sm:text-lg text-white mb-8">
-            Leading strategic communications and community engagement for
+            Leading strategic communications and civic engagement for
             positive change.
           </p>
         </div>
@@ -51,15 +51,15 @@ const AboutPage = () => {
               <div className="space-y-6 text-md sm:text-lg md:text-lg font-medium">
                 <p>
                   With over 25 years of experience spanning strategic
-                  communications and community engagement, Terry leads Garvey
+                  communications and civic engagement, Terry leads Garvey
                   Labs with expertise across four critical areas: building
-                  community support for sustainable renewable energy projects,
+                  community and political support for sustainable renewable energy projects,
                   positioning green data centers and sustainable digital
                   infrastructure, amplifying labor union voices, and advancing
                   social impact organizations.
                 </p>
                 <p>
-                  Terry's renewable energy community engagement focuses on
+                  Terry's renewable energy civic engagement focuses on
                   sustainable development, helping organizations navigate
                   complex stakeholder relationships and build lasting community
                   partnerships. His expertise in green data centers bridges the
