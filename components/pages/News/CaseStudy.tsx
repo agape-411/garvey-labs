@@ -22,7 +22,7 @@ export default function CaseStudy() {
 
   // Impact data
   const impacts = [
-    { icon: <FaLightbulb className="text-purple-600 text-4xl" />, title: "Environmental Justice", description: "Successfully navigated community engagement in diverse population (1/3 White, Black, Hispanic)" },
+    { icon: <FaLightbulb className="text-purple-600 text-4xl" />, title: "Environmental Justice", description: "Successfully navigated civic engagement in diverse population (1/3 White, Black, Hispanic)" },
     { icon: <FaHandshake className="text-purple-600 text-4xl" />, title: "Partnership Growth", description: "Forged strategic collaborations expanding market reach." },
     { icon: <FaCogs className="text-purple-600 text-4xl" />, title: "Operational Efficiency", description: "Streamlined processes for faster campaign execution." },
     { icon: <FaCheckCircle className="text-purple-600 text-4xl" />, title: "Long-term Impact", description: "Positioned the brand as a leader in its niche." },
@@ -35,7 +35,7 @@ export default function CaseStudy() {
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">From No to Yes: Texas City BESS Success</h1>
           <p className="text-lg max-w-3xl mx-auto">
-            Strategic Community Engagement Transforms Opposition into Unanimous Approval
+            Strategic Civic Engagement Transforms Opposition into Unanimous Approval
           </p>
 
           {/* Stats */}
@@ -65,7 +65,7 @@ export default function CaseStudy() {
         <h2 className="text-4xl font-bold text-center mb-6">Project Overview</h2>
         <p className="text-left max-w-3xl mb-8">
           Spearmint Energy’s Red Egret Battery Energy Storage System (BESS) faced significant regulatory and community challenges in Texas City, 
-          a diverse community where 1/3 of residents are Black, Hispanic, and White respectively. Through strategic community engagement, Garvey Labs 
+          a diverse community where 1/3 of residents are Black, Hispanic, and White respectively. Through strategic civic engagement, Garvey Labs 
           transformed initial skepticism into unanimous city commission approval.
         </p>
 
@@ -158,10 +158,10 @@ export default function CaseStudy() {
        {/* CTA */}
       <section className="bg-gradient-to-r from-purple-700 to-purple-500 text-white py-12 px-6 text-center">
         <h3 className="text-xl font-bold mb-4">
-          Ready to Navigate Complex Community Engagement?
+          Ready to Navigate Complex Civic Engagement?
         </h3>
         <p className="text-gray-300 mb-6">
-          Garvey Labs provides strategic community engagement for renewable energy projects in diverse communities.
+          Garvey Labs provides strategic civic engagement for renewable energy projects in diverse communities.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <button className="bg-purple-300 hover:bg-blue-600 px-6 py-3 rounded-full font-bold">

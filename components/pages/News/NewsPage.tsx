@@ -59,9 +59,9 @@ export default function NewsPage() {
       imageSrc: "/images/leadership.jpg",
       imageAlt: "Thought Leadership Image",
       title:
-        "Beyond NIMBY: How Smart Communications Can Transform Renewable Energy Community Engagement",
+        "Beyond NIMBY: How Smart Communications Can Transform Renewable Energy Civic Engagement",
       excerpt:
-        "Early community engagement prevents costly delays and builds lasting support for clean energy development. Here's our proven framework...",
+        "Early civic engagement prevents costly delays and builds lasting support for clean energy development. Here's our proven framework...",
       meta: [
         { label: "By Terry Lee" },
         { label: "January 5, 2025" },
@@ -79,7 +79,7 @@ export default function NewsPage() {
       imageAlt: "Case Study Image",
       title: "From No to Yes: Texas City BESS Success",
       excerpt:
-        "Strategic Community Engagement Transforms Opposition into Unanimous Approval...",
+        "Strategic Civic Engagement Transforms Opposition into Unanimous Approval...",
       meta: [
         { label: "December 28, 2024" },
         { label: "6 min read" },
@@ -117,7 +117,7 @@ export default function NewsPage() {
       title:
         "Renewable Energy Communications Expert Speaks at Clean Power Summit",
       excerpt:
-        "Terry Lee will be speaker on Community Engagement for Grid Modernization at the industry's premier conference",
+        "Terry Lee will be speaker on Civic Engagement for Grid Modernization at the industry's premier conference",
       meta: [
         { label: "September 3, 2025" },
         { label: "Clean Energy Wire" },
@@ -141,7 +141,7 @@ export default function NewsPage() {
         </h1>
         <p className="mt-4 text-lg max-w-3xl mx-auto text-[#4A5568]">
           Latest insights, press coverage, and thought leadership in strategic
-          communications and community engagement
+          communications and civic engagement
         </p>
       </header>
 
@@ -156,7 +156,7 @@ export default function NewsPage() {
               Building Community Support for Green Data Centers: A Strategic Framework
             </h2>
             <p className="mt-6 text-base sm:text-lg text-[#4A5568] leading-relaxed max-w-prose">
-              As the green data center market grows from $17B to $93B by 2032, community engagement becomes critical for project success. Here's how sustainable digital infrastructure can achieve authentic community acceptance...
+              As the green data center market grows from $17B to $93B by 2032, civic engagement becomes critical for project success. Here's how sustainable digital infrastructure can achieve authentic community acceptance...
             </p>
             <div className="flex flex-wrap gap-6 text-sm text-[#718096] mt-8 mb-12">
               <span>By Terry Lee</span>
@@ -281,7 +281,7 @@ export default function NewsPage() {
         <h2 className="text-3xl font-extrabold mb-4">Stay Informed</h2>
         <p className="max-w-xl mx-auto mb-8 text-lg leading-relaxed">
           Subscribe to receive our latest insights on strategic communications,
-          community engagement, and industry trends.
+          civic engagement, and industry trends.
         </p>
         <form
           action="mailto:news@garveylabs.com"

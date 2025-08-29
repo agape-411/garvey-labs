@@ -55,7 +55,7 @@ const ContactPage = () => {
               name="name"
               type="text"
               required
-              placeholder="Name *"
+              placeholder="Name"
               value={form.name}
               onChange={handleChange}
               className="w-full p-3 border rounded bg-amber-50 dark:bg-gray-800 text-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
@@ -75,7 +75,7 @@ const ContactPage = () => {
               name="email"
               type="email"
               required
-              placeholder="Email *"
+              placeholder="Email"
               value={form.email}
               onChange={handleChange}
               className="w-full p-3 border rounded bg-amber-50 dark:bg-gray-800 text-lg focus:ring-2 focus:ring-green-500 focus:outline-none"

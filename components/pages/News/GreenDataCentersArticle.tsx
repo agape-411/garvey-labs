@@ -20,7 +20,7 @@ export default function GreenDataCentersArticle() {
 
       <section className="bg-yellow-50 border-l-4 border-green-400 p-8 text-gray-800 font-medium text-lg">
         <p>
-          <strong>As the green data center market grows from $17B to $93B by 2032, community engagement becomes critical for project success.</strong>Data centers have become the invisible backbone of our digital economy, powering everything from cloud computing to artificial intelligence applications. Yet these facilities—often consuming as much electricity as small cities—face increasing scrutiny from communities concerned about energy consumption, environmental impact, and local infrastructure strain.
+          <strong>As the green data center market grows from $17B to $93B by 2032, civic engagement becomes critical for project success.</strong>Data centers have become the invisible backbone of our digital economy, powering everything from cloud computing to artificial intelligence applications. Yet these facilities—often consuming as much electricity as small cities—face increasing scrutiny from communities concerned about energy consumption, environmental impact, and local infrastructure strain.
         </p>
       </section>
 
@@ -47,9 +47,9 @@ export default function GreenDataCentersArticle() {
         </p>
 
         <p className="mb-6">
-          The solution isn't avoiding community engagement—it's transforming how the industry approaches it. Drawing from over 25 years
+          The solution isn't avoiding civic engagement—it's transforming how the industry approaches it. Drawing from over 25 years
            of strategic communications experience, including work with controversial infrastructure projects, I've seen how proactive 
-           community engagement can turn potential opposition into genuine partnership. My research on misinformation and democratic processes 
+           civic engagement can turn potential opposition into genuine partnership. My research on misinformation and democratic processes 
            (Lee, T., "The global rise of 'fake news' and the threat to democratic elections in the USA," Public Administration and Policy, Vol. 22 No. 1, 2019, pp. 15-24) 
           revealed that successful infrastructure development requires understanding community psychology, not just technical specifications.
         </p>
@@ -69,7 +69,7 @@ export default function GreenDataCentersArticle() {
         <p className="mb-6">
           This opposition often receives amplification from environmental groups, energy justice advocates, 
           and local media outlets eager to cover David-versus-Goliath stories about tech giants versus small 
-          communities. Social media enables rapid organization around opposition narratives, while traditional community 
+          communities. Social media enables rapid organization around opposition narratives, while traditional civic 
           engagement—if it happens at all—often comes too late in the development process.
         </p>
 
@@ -92,7 +92,7 @@ export default function GreenDataCentersArticle() {
         </h2>
 
         <p className="mb-6">
-          Most data center developers treat community engagement as regulatory compliance rather than strategic necessity. They organize required public hearings, distribute technical fact sheets, and present economic impact studies, then wonder why communities remain skeptical or hostile.
+          Most data center developers treat civic engagement as regulatory compliance rather than strategic necessity. They organize required public hearings, distribute technical fact sheets, and present economic impact studies, then wonder why communities remain skeptical or hostile.
         </p>
 
         <p className="mb-6">
@@ -149,7 +149,7 @@ export default function GreenDataCentersArticle() {
         </h2>
 
         <p className="mb-6">
-          Green data centers present unique opportunities for authentic community engagement because environmental sustainability aligns with many residents' values. Unlike traditional industrial facilities that create inherent conflicts between economic benefits and environmental costs, sustainable data centers can position themselves as part of climate solutions rather than problems.
+          Green data centers present unique opportunities for authentic civic engagement because environmental sustainability aligns with many residents' values. Unlike traditional industrial facilities that create inherent conflicts between economic benefits and environmental costs, sustainable data centers can position themselves as part of climate solutions rather than problems.
         </p>
 
         <p className="mb-6">
@@ -169,7 +169,7 @@ export default function GreenDataCentersArticle() {
         </h2>
 
         <p className="mb-6">
-          Effective community engagement for green data centers requires four integrated components: values-based narrative development, authentic messenger networks, transparent relationship building, and proactive information ecosystem management.
+          Effective civic engagement for green data centers requires four integrated components: values-based narrative development, authentic messenger networks, transparent relationship building, and proactive information ecosystem management.
         </p>
 
         <h2 className="text-2xl font-semi-bold text-green-800 mb-6 border-b-2 border-gray-200 pb-2">
@@ -259,7 +259,7 @@ export default function GreenDataCentersArticle() {
 
         <h2 className="text-3xl font-bold text-green-800 mb-3">Practical Implementation: The 120-Day Engagement Framework</h2>
         <p className="mb-6">
-          Developers ready to implement strategic community engagement should follow a structured timeline that builds relationships and trust before introducing specific projects:
+          Developers ready to implement strategic civic engagement should follow a structured timeline that builds relationships and trust before introducing specific projects:
         </p>
 
         <h4 className="text-2xl font-semibold text-green-700 mb-6">Days 1-40: Community Research and Relationship Building</h4>
@@ -299,7 +299,7 @@ export default function GreenDataCentersArticle() {
         </p>
 
         <blockquote className="bg-green-50 border-l-4 border-green-600 rounded-r-lg p-6 my-10 italic text-lg text-gray-800">
-          "Strategic communications isn't optional for green data centers—it's the critical path to both project success and industry credibility. Developers who master community engagement will find themselves with competitive advantages in securing approvals, maintaining community support, and building sustainable businesses."
+          "Strategic communications isn't optional for green data centers—it's the critical path to both project success and industry credibility. Developers who master civic engagement will find themselves with competitive advantages in securing approvals, maintaining community support, and building sustainable businesses."
         </blockquote>
 
         <p className="m-6">
@@ -318,7 +318,7 @@ export default function GreenDataCentersArticle() {
           {[
             "Green Data Centers",
             "Strategic Communications",
-            "Community Engagement",
+            "Civic Engagement",
             "Digital Infrastracture",
             "Sustainability",
             "AI Infrastracture",

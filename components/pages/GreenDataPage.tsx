@@ -60,7 +60,7 @@ const marketPoints = [
       'Renewable energy knowledge validates sustainability claims',
       'Progressive network includes environmental groups requiring engagement',
       "Crisis communications handles 'greenwashing' concerns",
-      'Community engagement focuses on authentic environmental benefits',
+      'Civic engagement focuses on authentic environmental benefits',
     ],
     image: energyGridImage,
   },

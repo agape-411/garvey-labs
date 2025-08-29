@@ -1,4 +1,3 @@
-// app/news/beyond-nimby/page.tsx
 "use client";
 
 import Link from "next/link";
@@ -139,7 +138,7 @@ export default function BeyondNimbyPage(): JSX.Element {
           </h3>
 
           <p className="mb-6 text-[#4a5568]">
-            Effective renewable energy community engagement requires four integrated components: narrative strategy, messenger authenticity, relationship infrastructure, and information ecosystem management.
+            Effective renewable energy civic engagement requires four integrated components: narrative strategy, messenger authenticity, relationship infrastructure, and information ecosystem management.
           </p>
 
           <h3 className="text-[1.125rem] md:text-[1.5rem] font-[600] text-[#2d3748] mt-6 mb-4">
@@ -264,7 +263,7 @@ export default function BeyondNimbyPage(): JSX.Element {
           </h2>
 
           <p className="mb-6 text-[#4a5568]">
-            Beyond moral arguments for better community engagement lies stark economic reality: project delays and opposition campaigns cost developers millions of dollars while threatening clean energy deployment timelines. The National Renewable Energy Laboratory analysis found that if all communities adopted the most restrictive wind ordinances, it would cut potential wind capacity by 87%—potentially derailing climate goals regardless of federal policy support.
+            Beyond moral arguments for better civic engagement lies stark economic reality: project delays and opposition campaigns cost developers millions of dollars while threatening clean energy deployment timelines. The National Renewable Energy Laboratory analysis found that if all communities adopted the most restrictive wind ordinances, it would cut potential wind capacity by 87%—potentially derailing climate goals regardless of federal policy support.
           </p>
 
           <p className="mb-6 text-[#4a5568]">
@@ -284,7 +283,7 @@ export default function BeyondNimbyPage(): JSX.Element {
           </p>
 
           <p className="mb-6 text-[#4a5568]">
-            Success requires embracing the complexity of community engagement: understanding that people make decisions based on identity and relationships, not just facts and incentives. It means investing in long-term relationship building rather than short-term project approval. It means empowering authentic community voices rather than relying on corporate messaging.
+            Success requires embracing the complexity of civic engagement: understanding that people make decisions based on identity and relationships, not just facts and incentives. It means investing in long-term relationship building rather than short-term project approval. It means empowering authentic community voices rather than relying on corporate messaging.
           </p>
 
           <blockquote className="bg-[#f7fafc] border-l-4 border-[#48bb78] p-4 md:p-6 my-6 italic text-[1.05rem] md:text-[1.1rem] text-[#2d3748] rounded-tr-md rounded-br-md">

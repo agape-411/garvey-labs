@@ -4,8 +4,8 @@ import React from "react";
 
 export default function ConnectPage() {
   const fields = [
-    { id: "name", label: "Name *", type: "text", required: true },
-    { id: "email", label: "Email *", type: "email", required: true },
+    { id: "name", label: "Name", type: "text", required: true },
+    { id: "email", label: "Email", type: "email", required: true },
     { id: "phone", label: "Phone", type: "tel" },
     {
       id: "collaboration-type",
@@ -27,7 +27,7 @@ export default function ConnectPage() {
       options: [
         "Select primary expertise",
         "Strategic Communications",
-        "Community Engagement",
+        "Civic Engagement",
         "Renewable Energy",
         "Green Data Centers",
         "Labor Relations",
@@ -91,7 +91,7 @@ export default function ConnectPage() {
           {[
             {
               title: "Project-Based Partnerships",
-              desc: "Work with us on specific client engagements, bringing your specialized skills to support strategic communications and community engagement initiatives.",
+              desc: "Work with us on specific client engagements, bringing your specialized skills to support strategic communications and civic engagement initiatives.",
             },
             {
               title: "Subject Matter Expertise",
@@ -103,7 +103,7 @@ export default function ConnectPage() {
             },
             {
               title: "Learning & Development",
-              desc: "Gain hands-on experience in strategic communications and community engagement while contributing to meaningful projects creating positive change.",
+              desc: "Gain hands-on experience in strategic communications and civic engagement while contributing to meaningful projects creating positive change.",
             },
           ].map((item, i) => (
             <div
@@ -186,7 +186,7 @@ export default function ConnectPage() {
             },
             {
               title: "Professional Development",
-              desc: "Collaborators gain exposure to diverse clients and challenging projects while building expertise in strategic communications and community engagement.",
+              desc: "Collaborators gain exposure to diverse clients and challenging projects while building expertise in strategic communications and civic engagement.",
             },
           ].map((item, i) => (
             <div
@@ -234,7 +234,7 @@ export default function ConnectPage() {
         </p>
 
         <form
-          action="mailto:connect@garveylabs.com"
+          action="mailto:Contacts@garveylabs.com"
           method="post"
           encType="text/plain"
           className="space-y-4"
@@ -276,7 +276,7 @@ export default function ConnectPage() {
 
           <div>
             <label htmlFor="message" className="block font-medium mb-1">
-              Tell Us About Yourself *
+              Tell Us About Yourself 
             </label>
             <textarea
               id="message"
