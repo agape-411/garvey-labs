@@ -68,7 +68,7 @@ export default function ConnectPage() {
       <header className="bg-gradient-to-r from-[#2C5282] to-[#1A365D] text-white py-16 px-6 text-center">
         <h1 className="text-5xl font-bold mb-4">Connect With Us</h1>
         <p className="text-[#E6FFFA] text-lg max-w-2xl mx-auto">
-          Join our network of strategic communications and community engagement professionals
+          Join our network of strategic communications and civic engagement professionals
         </p>
       </header>
 
@@ -132,7 +132,7 @@ export default function ConnectPage() {
               ],
             },
             {
-              title: "Community Engagement Specialists",
+              title: "Civic Engagement Specialists",
               list: [
                 "Public involvement and stakeholder engagement experience",
                 "Facilitation and workshop design skills",
@@ -310,7 +310,7 @@ export default function ConnectPage() {
 
         <div className="mt-6 text-sm text-[#718096]">
           <p>
-            <strong>Direct Email:</strong> connect@garveylabs.com
+            <strong>Direct Email:</strong> Contacts@garveylabs.com
           </p>
           <p>
             <strong>Response Time:</strong> We review all connection inquiries and respond within 5
