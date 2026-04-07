@@ -2,53 +2,132 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import { Button } from "./ui/button";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [industriesOpen, setIndustriesOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+
+  const industriesTimeout = useRef<NodeJS.Timeout | null>(null);
+  const servicesTimeout = useRef<NodeJS.Timeout | null>(null);
+
+  const handleMouseEnter = (setOpen: Function, timeoutRef: any) => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setOpen(true);
+  };
+
+  const handleMouseLeave = (setOpen: Function, timeoutRef: any, delay = 300) => {
+    timeoutRef.current = setTimeout(() => setOpen(false), delay);
+  };
 
   return (
-    <header className="bg-white text-gray-800 shadow-md sticky top-0 z-50 border-b border-gray-200 h-20">
+    <header className="bg-white text-gray-800 shadow-md sticky top-0 z-50 border-b border-gray-200 h-24">
       <div className="max-w-6xl mx-auto px-3 sm:px-6 lg:px-0 h-full flex items-center justify-between w-full">
         {/* Left - Logo */}
         <div className="flex items-center h-full">
-          <Link href="/" className="flex items-center h-full">
-            <Image
-              src="/images/logo.jpg"
-              alt="Garvey Labs Logo"
-              width={280}
-              height={80}
-              className="h-full w-auto object-contain"
-              priority
-            />
-          </Link>
-        </div>
+  <Link href="/" className="flex items-center h-full">
+    <Image
+      src="/images/logo1.png"
+      alt="Garvey Labs Logo"
+      width={180}
+      height={50}
+      className="h-full w-auto object-contain"
+      priority
+    />
+  </Link>
+</div>
 
-        {/* Center - Navigation */}
-        <nav className="hidden md:flex justify-center space-x-6 items-center text-base font-medium">
-          <Link href="/" className="hover:text-blue-600 transition">Home</Link>
-          <Link href="/renewable-energy" className="hover:text-blue-600 transition">Renewable Energy</Link>
-          <Link href="/green-data" className="hover:text-blue-600 transition">Green Energy Data</Link>
-          <Link href="/labor-unions" className="hover:text-blue-600 transition">Labor Unions</Link>
-          <Link href="/social-impact" className="hover:text-blue-600 transition">Social Impact</Link>
-          <Link href="/about" className="hover:text-blue-600 transition">About</Link>
-          <Link href="/news" className="hover:text-blue-600 transition">News</Link>
-          <Link href="/connect" className="hover:text-blue-600 transition">Connect</Link>
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex justify-center items-center space-x-8 text-lg font-semibold">
+          <Link href="/" className="hover:text-[#319795] transition">
+            Home
+          </Link>
+
+          {/* Industries */}
+          <div
+            className="relative"
+            onMouseEnter={() => handleMouseEnter(setIndustriesOpen, industriesTimeout)}
+            onMouseLeave={() => handleMouseLeave(setIndustriesOpen, industriesTimeout)}
+          >
+            <button className="hover:text-[#319795] transition flex items-center gap-1">
+              Industries ▾
+            </button>
+            {industriesOpen && (
+              <div className="absolute top-full left-0 bg-white border border-gray-200 rounded-md shadow-lg mt-2 w-52 z-50">
+                <Link
+                  href="/data-center-economy"
+                  className="block px-6 py-3 text-base text-gray-800 hover:bg-green-50"
+                >
+                  Data Center Economy
+                </Link>
+                <Link
+                  href="/renewable-energy"
+                  className="block px-6 py-3 text-base text-gray-800 hover:bg-green-50"
+                >
+                  Renewable Energy
+                </Link>
+              </div>
+            )}
+          </div>
+
+          {/* Services */}
+          <div
+            className="relative"
+            onMouseEnter={() => handleMouseEnter(setServicesOpen, servicesTimeout)}
+            onMouseLeave={() => handleMouseLeave(setServicesOpen, servicesTimeout)}
+          >
+            <button className="hover:text-[#319795] transition flex items-center gap-1">
+              Services ▾
+            </button>
+            {servicesOpen && (
+              <div className="absolute top-full left-0 bg-white border border-gray-200 rounded-md shadow-lg mt-2 w-72 z-50">
+                <Link
+                  href="/grid-positive-framework"
+                  className="block px-6 py-3 text-base text-gray-800 hover:bg-green-50"
+                >
+                  Grid-Positive Framework
+                </Link>
+                
+                <Link
+                  href="/community-intelligence-brief"
+                  className="block px-6 py-3 text-base text-gray-800 hover:bg-green-50"
+                >
+                  Community Intelligence Brief
+                </Link>
+                <Link
+                  href="/strategic-advisory"
+                  className="block px-6 py-3 text-base text-gray-800 hover:bg-green-50"
+                >
+                  Strategic Advisory
+                </Link>
+              </div>
+            )}
+          </div>
+
+          <Link href="/insights" className="hover:text-[#319795] transition">
+            Insights
+          </Link>
+          <Link href="/about" className="hover:text-[#319795] transition">
+            About
+          </Link>
+          <Link href="/connect" className="hover:text-[#319795] transition">
+            Connect
+          </Link>
         </nav>
 
-        {/* Right - Contact Button & Mobile Menu */}
+        {/* Right - Contact & Mobile */}
         <div className="flex items-center space-x-4">
           <Link href="/contact" className="hidden md:block">
-            <Button className="bg-blue-600 text-white text-base px-6 py-2.5 rounded-lg hover:bg-blue-700 transition">
+            <Button className="bg-[#319795] text-white text-lg px-6 py-3 rounded-lg hover:bg-green-700 transition">
               Contact Us
             </Button>
           </Link>
 
-          {/* Mobile Menu Toggle */}
           <button
-            className="md:hidden text-[4rem] text-gray-500"
+            className="md:hidden text-[3rem] text-gray-500"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle Menu"
           >
@@ -59,17 +138,70 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-blue-900 px-4 pb-6">
-          <nav className="flex flex-col space-y-4 text-lg font-medium text-white border-t pt-4">
-            <Link href="/" onClick={() => setMenuOpen(false)} className="hover:text-blue-300">Home</Link>
-            <Link href="/renewable-energy" onClick={() => setMenuOpen(false)} className="hover:text-blue-300">Renewable Energy</Link>
-            <Link href="/green-data" onClick={() => setMenuOpen(false)} className="hover:text-blue-300">Green Data</Link>
-            <Link href="/labor-unions" onClick={() => setMenuOpen(false)} className="hover:text-blue-300">Labor Unions</Link>
-            <Link href="/social-impact" onClick={() => setMenuOpen(false)} className="hover:text-blue-300">Social Impact</Link>
-            <Link href="/about" onClick={() => setMenuOpen(false)} className="hover:text-blue-300">About</Link>
-            <Link href="/news" onClick={() => setMenuOpen(false)} className="hover:text-blue-300">News</Link>
-            <Link href="/connect" onClick={() => setMenuOpen(false)} className="hover:text-blue-300">Connect</Link>
-            <Link href="/contact" onClick={() => setMenuOpen(false)} className="hover:text-blue-300">Contact</Link>
+        <div className="md:hidden bg-white px-4 pb-6 border-t border-gray-200">
+          <nav className="flex flex-col space-y-4 text-lg font-medium text-gray-800 pt-4">
+            <Link href="/" onClick={() => setMenuOpen(false)} className="hover:text-[#319795]">
+              Home
+            </Link>
+
+            {/* Mobile Industries */}
+            <div className="flex flex-col">
+              <button
+                onClick={() => setIndustriesOpen(!industriesOpen)}
+                className="flex justify-between items-center font-semibold text-gray-800 hover:text-[#319795]"
+              >
+                Industries ▾
+              </button>
+              {industriesOpen && (
+                <div className="flex flex-col ml-4 mt-2">
+                  <Link href="/data-center-economy" onClick={() => setMenuOpen(false)} className="py-3 hover:text-[#319795]">
+                    Data Center Economy
+                  </Link>
+                  <Link href="/renewable-energy" onClick={() => setMenuOpen(false)} className="py-3 hover:text-[#319795]">
+                    Renewable Energy
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            {/* Mobile Services */}
+            <div className="flex flex-col">
+              <button
+                onClick={() => setServicesOpen(!servicesOpen)}
+                className="flex justify-between items-center font-semibold text-gray-800 hover:text-[#319795]"
+              >
+                Services ▾
+              </button>
+              {servicesOpen && (
+                <div className="flex flex-col ml-4 mt-2">
+                  <Link href="/grid-positive-framework" onClick={() => setMenuOpen(false)} className="py-3 hover:text-[#319795]">
+                    Grid-Positive Framework
+                  </Link>
+                  <Link href="/grid-positive-framework/subpage" onClick={() => setMenuOpen(false)} className="py-3 ml-4 hover:text-[#319795]">
+                    Subpage Example
+                  </Link>
+                  <Link href="/community-intelligence-brief" onClick={() => setMenuOpen(false)} className="py-3 hover:text-[#319795]">
+                    Community Intelligence Brief
+                  </Link>
+                  <Link href="/strategic-advisory" onClick={() => setMenuOpen(false)} className="py-3 hover:text-[#319795]">
+                    Strategic Advisory
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            <Link href="/insights" onClick={() => setMenuOpen(false)} className="hover:text-[#319795]">
+              Insights
+            </Link>
+            <Link href="/about" onClick={() => setMenuOpen(false)} className="hover:text-[#319795]">
+              About
+            </Link>
+            <Link href="/connect" onClick={() => setMenuOpen(false)} className="hover:text-[#319795]">
+              Connect
+            </Link>
+            <Link href="/contact" onClick={() => setMenuOpen(false)} className="hover:text-[#319795]">
+              Contact
+            </Link>
           </nav>
         </div>
       )}

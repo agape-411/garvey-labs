@@ -1,159 +1,160 @@
-'use client'
+"use client";
 
-import React from 'react'
-import Image from 'next/image'
+import Image from "next/image";
+import Link from "next/link";
 
-const RenewableEnergyPage = () => {
+export default function RenewableEnergyPage() {
   return (
-    <div className='text-[#2D3748] bg-white leading-relaxed text-[1.1rem]'>
-      {/* Hero Section */}
-      <div className='relative h-[60vh] w-full'>
+    <div className="bg-white text-[#1B3A5C] leading-relaxed">
+
+      {/* ================= HERO ================= */}
+      <section className="relative h-[60vh] flex items-center justify-center">
         <Image
-          src='/images/R1.jpg'
-          alt='Renewable Energy Background'
+          src="/images/R1.jpg"
+          alt="Renewable Energy Infrastructure"
           fill
-          className='object-cover'
+          className="object-cover"
+          priority
         />
-        <div className='absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center px-6'>
-          <h1 className='text-4xl md:text-6xl font-bold text-white max-w-5xl'>
-            Sustainable Renewable Energy Development Civic Engagement
+        <div className="absolute inset-0 bg-black/60" />
+
+        <div className="relative z-10 text-center px-6 max-w-4xl">
+          <h1 className="text-5xl md:text-7xl font-semibold text-white leading-tight mb-6">
+            Renewable Energy Advisory and Stakeholder Engagement
           </h1>
-          <p className='text-xl md:text-lg mt-4 max-w-3xl text-green-100'>
-            Building community support for clean energy projects through
-            innovative engagement
+          <p className="text-lg md:text-xl text-gray-200">
+            Infrastructure stakeholder expertise built over a decade of clean energy development — from utility-scale BESS to transmission and grid modernization projects.
           </p>
         </div>
-      </div>
+      </section>
 
-      {/* Renewable Energy Approach */}
-      <section className='bg-[#fbfcff] text-[#2D3748] py-20 px-6 md:px-20 transition-all duration-500'>
-        <h2 className='text-4xl md:text-5xl font-bold text-center text-green-700 mb-16'>
-          Our Renewable Energy Approach
-        </h2>
-        {[
-          {
-            title: 'Project Planning & Strategy',
-            desc: 'Comprehensive stakeholder mapping and engagement strategy development for sustainable renewable energy projects.',
-            image: '/images/RE5.png',
-          },
-          {
-            title: 'Civic Engagement',
-            desc: 'Building and maintaining positive relationships with political, business, and local community stakeholders throughout energy project development.',
-            image: '/images/RE1.png',
-          },
-          {
-            title: 'Public Involvement',
-            desc: 'Facilitating dialogue that transforms complex renewable energy projects into accessible community conversations.',
-            image: '/images/RE4.png',
-          },
-        ].map((item, idx) => (
-          <div
-            key={idx}
-            className={`flex flex-col md:flex-row ${
-              idx % 2 === 1 ? 'md:flex-row-reverse' : ''
-            } items-center gap-10 mb-16`}
-          >
-            <div className='md:w-1/2'>
-              <Image
-                src={item.image}
-                alt={item.title}
-                width={400}
-                height={100}
-                className='rounded-xl w-full h-90 object-cover shadow-md hover:scale-[1.02] transition-transform duration-300'
-              />
-            </div>
-            <div className='md:w-1/2 text-center md:text-left'>
-              <h3 className='text-2xl font-bold text-green-700 mb-4'>
-                {item.title}
+      {/* ================= THE CREDENTIAL ================= */}
+      <section className="py-20 px-6">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+
+          {/* LEFT: TEXT */}
+          <div>
+            <h2 className="text-3xl md:text-5xl font-semibold mb-8">
+              The Foundation of the Garvey Labs Approach
+            </h2>
+
+            <p className="text-md md:text-lg text-gray-700 mb-8">
+              Garvey Labs' advisory practice in the data center economy is built on direct experience with the hardest problem in infrastructure development: turning community opposition into durable partnership. That experience was developed in the renewable energy sector, where contested approvals, multi-stakeholder negotiations, and community benefit structuring are the daily work.
+            </p>
+
+            <div className="border-l-4 border-[#0D6E6E] pl-6">
+              <h3 className="text-xl md:text-2xl font-semibold mb-3">
+                Red Egret Battery Energy Storage System, Texas City
               </h3>
-              <p className='text-lg leading-relaxed font-normal'>{item.desc}</p>
+
+              <p className="text-md md:text-lg text-gray-700">
+                A 300-megawatt battery energy storage facility that moved from unanimous community opposition to a unanimous 6-0 regulatory approval. The stakeholder engagement methodology developed on that project — infrastructure benefit framing, community advisory structure, workforce commitment design — is the foundation of the Garvey Labs framework now applied to the data center economy.
+              </p>
             </div>
           </div>
-        ))}
-      </section>
 
-      {/* Tools & Methodologies */}
-      <section className='bg-[#d2fcd5] text-[#2D3748] py-20 px-6 md:px-20 transition-all duration-500'>
-        <h2 className='text-3xl md:text-5xl sm:text-lg font-bold text-center text-green-800 mb-12'>
-          Tools & Methodologies
-        </h2>
-        <div className='flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-green-500'>
-          {[
-            {
-              title: 'Interactive Engagement Tools',
-              desc: 'We use real-time polling, interactive maps, dedicated web platforms, and mobile surveys to foster active participation and feedback.',
-            },
-            {
-              title: 'Stakeholder Analysis',
-              desc: 'Detailed community mapping, cultural assessments, and engagement planning ensure inclusive outreach and representation.',
-            },
-            {
-              title: 'Data-Driven Strategy',
-              desc: 'Using trends and feedback loops, we help refine strategies to meet stakeholder expectations and support long-term project success.',
-            },
-          ].map((item, idx) => (
-            <div key={idx} className='flex-1 px-6 py-6 text-center'>
-              <h3 className='text-xl font-semibold text-green-800 mb-3'>
-                {item.title}
-              </h3>
-              <p className='sm:text-lg'>{item.desc}</p>
+          {/* RIGHT: IMAGE + STATS */}
+          <div>
+            <div className="relative w-full h-[400px] rounded-xl overflow-hidden mb-10">
+              <Image
+                src="/images/D2.jpg"
+                alt="Battery Energy Storage System"
+                fill
+                className="object-cover"
+              />
             </div>
-          ))}
-        </div>
-      </section>
 
-      {/* Social Impact Services */}
-      <section className='bg-white py-20 px-6 md:px-20'>
-        <h2 className='text-4xl md:text-5xl font-bold text-center text-green-700 mb-16'>
-          Project Types We Support
-        </h2>
-        <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
-          {[
-            {
-              title: 'Solar Energy Projects',
-              desc: 'Civic Engagement for utility-scale and distributed solar developments.',
-              image: '/images/R4.png',
-            },
-            {
-              title: 'Wind Energy Projects',
-              desc: 'Stakeholder relations for onshore and offshore wind farm developments.',
-              image: '/images/RE6.png',
-            },
-            {
-              title: 'Energy Storage',
-              desc: 'Public involvement for battery storage and grid infrastructure projects.',
-              image: '/images/D2.jpg',
-            },
-            {
-              title: 'Transmission Lines',
-              desc: 'Civic engagement for renewable energy transmission and distribution infrastructure.',
-              image: '/images/R1.jpg',
-            },
-          ].map((item, idx) => (
-            <div
-              key={idx}
-              className='bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg hover:-translate-y-1 transition duration-300'
-            >
-              <h3 className='text-xl font-semibold text-green-700 mb-3'>
-                {item.title}
-              </h3>
-              <p className='text-gray-700 sm:text-lg text-lg mb-4'>
-                {item.desc}
-              </p>
-              <div className='w-full h-45 relative rounded-lg overflow-hidden'>
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  layout='fill'
-                  objectFit='cover'
-                />
+            <div className="grid grid-cols-3 gap-6 text-center">
+              <div>
+                <p className="text-3xl md:text-4xl font-semibold">300MW</p>
+                <p className="text-sm text-gray-500 mt-1">Facility Capacity</p>
+              </div>
+              <div>
+                <p className="text-3xl md:text-4xl font-semibold">6–0</p>
+                <p className="text-sm text-gray-500 mt-1">Unanimous Approval</p>
+              </div>
+              <div>
+                <p className="text-3xl md:text-4xl font-semibold">$47M</p>
+                <p className="text-sm text-gray-500 mt-1">Projected Tax Revenue</p>
               </div>
             </div>
-          ))}
+          </div>
+
         </div>
       </section>
-    </div>
-  )
-}
 
-export default RenewableEnergyPage
+      {/* ================= HOW WE HELP ================= */}
+      <section className="py-20 px-6 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+
+          <h2 className="text-3xl md:text-5xl font-semibold mb-12">
+            How We Help in the Renewable Energy Economy
+          </h2>
+
+          <div className="space-y-10">
+
+            <div>
+              <h3 className="text-xl md:text-2xl font-semibold mb-2">
+                Community Stakeholder Engagement
+              </h3>
+              <p className="text-md md:text-lg text-gray-700">
+                Building and maintaining community support for utility-scale renewable energy projects through structured engagement, benefit framing, and advisory board design.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl md:text-2xl font-semibold mb-2">
+                Contested Approval Strategy
+              </h3>
+              <p className="text-md md:text-lg text-gray-700">
+                Navigating complex multi-stakeholder environments where community opposition, regulatory proceedings, and developer timelines must be managed simultaneously.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl md:text-2xl font-semibold mb-2">
+                Community Benefit Agreement Structuring
+              </h3>
+              <p className="text-md md:text-lg text-gray-700">
+                Designing and negotiating CBAs for renewable energy projects that create genuine local benefit — workforce pathways, infrastructure improvements, and long-term revenue sharing — not performative commitments.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl md:text-2xl font-semibold mb-2">
+                Infrastructure Stakeholder Intelligence
+              </h3>
+              <p className="text-md md:text-lg text-gray-700">
+                Mapping the stakeholder landscape before a project enters the public process. Identifying opposition, building institutional support, and designing the engagement strategy that maximizes approval probability.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* ================= CONNECTION SECTION ================= */}
+      <section className="py-20 px-6">
+        <div className="max-w-3xl mx-auto text-center">
+
+          <h2 className="text-3xl md:text-5xl font-semibold mb-8">
+            From Renewable Energy to the Data Center Economy
+          </h2>
+
+          <p className="text-md md:text-lg text-gray-700 mb-8">
+            The data center economy and the renewable energy economy share the same underlying stakeholder challenge: private capital building large infrastructure in communities that need to know what they're getting and what it costs them. Garvey Labs brings renewable energy stakeholder methodology to the data center economy — where the investment is larger, the community benefit opportunity is greater, and the frameworks for capturing it have been largely absent. Until now.
+          </p>
+
+          <Link
+            href="/data-center-economy"
+            className="text-[#0D6E6E] font-medium hover:underline"
+          >
+            Learn about our Data Center Economy advisory practice →
+          </Link>
+
+        </div>
+      </section>
+
+    </div>
+  );
+}
