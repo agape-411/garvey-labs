@@ -24,21 +24,21 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white text-gray-800 shadow-md sticky top-0 z-50 border-b border-gray-200 h-24">
+    <header className="bg-white text-gray-800 shadow-md sticky top-0 z-50 border-b border-gray-200 h-23">
       <div className="max-w-6xl mx-auto px-3 sm:px-6 lg:px-0 h-full flex items-center justify-between w-full">
         {/* Left - Logo */}
         <div className="flex items-center h-full">
-  <Link href="/" className="flex items-center h-full">
-    <Image
+      <Link href="/" className="flex items-center h-full">
+       <Image
       src="/images/logo1.png"
       alt="Garvey Labs Logo"
-      width={180}
-      height={50}
+      width={190}
+      height={60}
       className="h-full w-auto object-contain"
       priority
-    />
-  </Link>
-</div>
+        />
+        </Link>
+       </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex justify-center items-center space-x-8 text-lg font-semibold">
