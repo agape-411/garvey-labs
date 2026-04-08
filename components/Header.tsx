@@ -32,8 +32,8 @@ const Header = () => {
        <Image
       src="/images/logo1.png"
       alt="Garvey Labs Logo"
-      width={190}
-      height={60}
+      width={70}
+      height={30}
       className="h-full w-auto object-contain"
       priority
         />
