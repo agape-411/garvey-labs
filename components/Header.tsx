@@ -28,17 +28,18 @@ const Header = () => {
       <div className="max-w-6xl mx-auto px-3 sm:px-6 lg:px-0 h-full flex items-center justify-between w-full">
         {/* Left - Logo */}
         <div className="flex items-center h-full">
-      <Link href="/" className="flex items-center h-full">
-       <Image
-      src="/images/logo1.png"
-      alt="Garvey Labs Logo"
-      width={70}
-      height={30}
-      className="h-full w-auto object-contain"
-      priority
-        />
-        </Link>
-       </div>
+          <Link href="/" className="flex items-center h-full">
+            <Image
+              src="/images/logo1.png"
+              alt="Garvey Labs Logo"
+              width={70}
+              height={30}
+              className="h-full w-auto object-contain"
+              priority
+              sizes="(max-width: 640px) 50px, (max-width: 1024px) 60px, 70px"
+            />
+          </Link>
+        </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex justify-center items-center space-x-8 text-lg font-semibold">
@@ -176,9 +177,6 @@ const Header = () => {
                 <div className="flex flex-col ml-4 mt-2">
                   <Link href="/grid-positive-framework" onClick={() => setMenuOpen(false)} className="py-3 hover:text-[#319795]">
                     Grid-Positive Framework
-                  </Link>
-                  <Link href="/grid-positive-framework/subpage" onClick={() => setMenuOpen(false)} className="py-3 ml-4 hover:text-[#319795]">
-                    Subpage Example
                   </Link>
                   <Link href="/community-intelligence-brief" onClick={() => setMenuOpen(false)} className="py-3 hover:text-[#319795]">
                     Community Intelligence Brief

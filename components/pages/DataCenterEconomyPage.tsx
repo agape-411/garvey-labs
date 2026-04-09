@@ -114,35 +114,7 @@ export default function DataCenterEconomyPage() {
         </div>
       </section>
 
-      {/* ================= INSIGHTS ================= */}
-      <section className="max-w-7xl mx-auto px-6 py-24">
-        <h2 className="text-4xl md:text-5xl font-semibold mb-12">
-          Data Center Economy Perspectives
-        </h2>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          {[1, 2, 3].map((_, i) => (
-            <div key={i} className="hover:shadow-sm transition p-6">
-              <p className="text-xs tracking-[0.12em] text-[#0D6E6E] mb-2">
-                DATA CENTER ECONOMY
-              </p>
-              <h3 className="text-xl md:text-2xl font-semibold mb-3">
-                Insight Title Placeholder
-              </h3>
-              <p className="text-gray-600 text-sm md:text-base">
-                Short insight summary aligned with homepage structure.
-              </p>
-            </div>
-          ))}
-        </div>
-
-        <Link
-          href="/insights"
-          className="inline-block mt-10 text-[#0D6E6E] font-medium hover:underline"
-        >
-          View all insights →
-        </Link>
-      </section>
+      
 
       {/* ================= RELATED SERVICES ================= */}
       <section className="bg-gray-50 py-24">

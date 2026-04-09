@@ -34,7 +34,7 @@ const HomePage = () => {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <Link href="/industries" className="bg-white text-[#1B3A5C] px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition">
+              <Link href="/data-center-economy" className="bg-white text-[#1B3A5C] px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition">
                 Explore Our Industries →
               </Link>
 
@@ -80,11 +80,11 @@ const HomePage = () => {
                 </p>
 
                 <p className="text-base md:text-lg text-gray-700 mb-6 leading-relaxed">
-                  The data center economy is generating unprecedented private investment in infrastructure. Garvey Labs helps majority-Black communities and the economic development institutions that serve them compete for that investment on terms that build lasting local wealth — before developers define the terms.
+                  The data center economy is generating unprecedented private investment in infrastructure. Garvey Labs helps under-capitalized markets and the economic development institutions that serve them compete for that investment on terms that build lasting local wealth — before developers define the terms.
                 </p>
               </div>
 
-              <Link href="/industries/data-center" className="text-[#0D6E6E] font-semibold hover:underline">
+              <Link href="/data-center-economy" className="text-[#0D6E6E] font-semibold hover:underline">
                 Explore Data Center Advisory →
               </Link>
             </div>
@@ -105,7 +105,7 @@ const HomePage = () => {
                 </p>
               </div>
 
-              <Link href="/industries/renewable-energy" className="text-[#0D6E6E] font-semibold hover:underline">
+              <Link href="/renewable-energy" className="text-[#0D6E6E] font-semibold hover:underline">
                 Explore Renewable Energy Advisory →
               </Link>
             </div>
@@ -220,7 +220,7 @@ const HomePage = () => {
 
         <div className="relative w-full h-40 mt-auto">
           <Image
-            src="/images/DC2.png"
+            src="/images/U1.png"
             alt="Community Development Corporations"
             fill
             className="object-cover rounded-xl"
@@ -240,7 +240,7 @@ const HomePage = () => {
 
         <div className="relative w-full h-40 mt-auto">
           <Image
-            src="/images/DC1.png"
+            src="/images/U4.png"
             alt="Economic Development Organizations"
             fill
             className="object-cover rounded-xl"
@@ -260,7 +260,7 @@ const HomePage = () => {
 
         <div className="relative w-full h-40 mt-auto">
           <Image
-            src="/images/GP1.png"
+            src="/images/U3.png"
             alt="Black Chambers of Commerce"
             fill
             className="object-cover rounded-xl"
@@ -280,7 +280,7 @@ const HomePage = () => {
 
         <div className="relative w-full h-40 mt-auto">
           <Image
-            src="/images/GP2.jpg"
+            src="/images/U2.jpg"
             alt="Civic and Community Leaders"
             fill
             className="object-cover rounded-xl"

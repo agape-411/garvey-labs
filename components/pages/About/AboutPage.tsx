@@ -65,7 +65,7 @@ const AboutPage = () => {
             {/* Terry Lee Image */}
             <div className="relative w-full h-100 sm:h-[400px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden">
               <Image
-                src="/images/Ab3.jpg"
+                src="/images/hero.jpg"
                 alt="Terry Lee"
                 fill
                 className="object-fit"
@@ -102,7 +102,7 @@ const AboutPage = () => {
                 { category: "ORGANIZED LABOR", name: "SEIU — Deputy National Director for Communications", body: "2 million members. Three election cycles. Eight swing states. Peer relationships inside the AFL-CIO building trades ecosystem." },
                 { category: "INFRASTRUCTURE", name: "Red Egret BESS — Texas City", body: "300MW battery energy storage. Unanimous opposition to unanimous 6-0 approval. Proof of concept for Garvey Labs framework." },
                 { category: "CORPORATE ADVISORY", name: "Walker Marchant Group, Five Corners Strategies, GMMB", body: "Strategic communications across infrastructure, technology, litigation, and civic sectors." },
-                { category: "ACADEMIC", name: "Vassar College B.A. | Harvard Business School Online", body: "Peer-reviewed publication in Public Administration and Policy: An Asia-Pacific Journal (2019). Author of PR To The People!" },
+                { category: "ACADEMIC", name: "Vassar College B.A. | Harvard Business Graduate Certificate, Organizational Leadership", body: "Peer-reviewed publication in Public Administration and Policy: An Asia-Pacific Journal (2019). Author of PR To The People!" },
                 { category: "GARVEY LABS", name: "Founded 2023 | Washington, DC", body: "Strategic infrastructure stakeholder and civic engagement advisory. Community-side only. Grid-Positive Community Integration Framework." },
               ].map((item, idx) => (
                 <Card key={idx} className="h-full border-0 shadow-md bg-white">
