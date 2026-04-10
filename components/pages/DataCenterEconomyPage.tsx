@@ -126,7 +126,7 @@ export default function DataCenterEconomyPage() {
           <div className="grid md:grid-cols-3 gap-10">
 
             <ServiceCard
-              image="/images/DC1.png"
+              image="/images/SB.png"
               category="FRAMEWORK"
               title="Grid-Positive Community Integration Framework"
               description="A structured methodology for converting infrastructure investment into durable community wealth."
@@ -134,7 +134,7 @@ export default function DataCenterEconomyPage() {
             />
 
             <ServiceCard
-              image="/images/DC1.png"
+              image="/images/SC.png"
               category="INTELLIGENCE"
               title="Community Intelligence Brief"
               description="Jurisdiction-specific intelligence covering fiscal baseline and negotiation readiness."
@@ -142,7 +142,7 @@ export default function DataCenterEconomyPage() {
             />
 
             <ServiceCard
-              image="/images/DC1.png"
+              image="/images/SA.png"
               category="ADVISORY"
               title="Strategic Advisory Services"
               description="Full-spectrum advisory across stakeholder engagement and negotiation."

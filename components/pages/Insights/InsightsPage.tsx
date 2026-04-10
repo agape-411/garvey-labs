@@ -59,8 +59,8 @@ export default function InsightsPage() {
       categoryLabel: "Renewable Energy",
       categoryClass: "bg-gray-400",
       imageSrc: "/images/case.jpg",
-      title: "From Opposition to 6-0: Red Egret Case Study",
-      excerpt: "Coming Q2 2026",
+      title: "How Smart Communications Can Transform Renewable Energy Community Engagement",
+      
       meta: [],
       linkLabel: "Read Article →",
       linkHref: "/insights/renewable-article",

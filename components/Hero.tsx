@@ -28,6 +28,7 @@ const HomePage = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               The Data Center and Renewable Energy Economies Are Reshaping American Communities.
             </h1>
+            
 
             <p className="text-lg md:text-xl text-white/85 mb-8 leading-relaxed">
               Garvey Labs helps communities and the organizations that serve them navigate that transformation — capturing lasting wealth, stronger infrastructure, and real career pathways.
@@ -163,7 +164,7 @@ const HomePage = () => {
           },
           {
             tag: "RENEWABLE ENERGY",
-            title: "From Opposition to 6-0: The Red Egret BESS Case Study in Community Stakeholder Engagement",
+            title: "How Smart Communications Can Transform Renewable Energy Community Engagement",
             image: "/images/case.jpg"
           }
         ].map((item, i) => (
@@ -186,9 +187,7 @@ const HomePage = () => {
             {item.title}
           </h3>
 
-          <p className="text-sm text-gray-500 mb-4">
-            Coming Soon — Q2 2026
-          </p>
+          
 
           <Link href="/insights" className="text-[#0D6E6E] font-semibold hover:underline">
             Read More →
@@ -314,6 +313,9 @@ const HomePage = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Ready to Explore Your Community's Opportunity?
           </h2>
+          <div className="bg-red-500 text-white p-10 text-2xl">
+  TAILWIND TEST
+</div>
 
           <p className="text-base md:text-lg text-white/85 mb-8 leading-relaxed">
             The Grid-Positive Community Intelligence Brief is the starting point — a jurisdiction-specific intelligence product delivered in 7 business days. Contact us to discuss what it would show for your community.
