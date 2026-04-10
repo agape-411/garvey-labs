@@ -86,7 +86,7 @@ const AboutPage = () => {
                 In the infrastructure sector, Terry's most significant credential is the Red Egret BESS project — a 300-megawatt battery energy storage facility in Texas City that moved from unanimous community opposition to unanimous 6-0 regulatory approval. The stakeholder methodology developed on that project became the foundation of the Garvey Labs framework.
               </p>
               <p className="text-md sm:text-lg md:text-lg font-medium">
-                Terry holds a B.A. from Vassar College in Political Science and Economics, a Harvard Business School Online certificate in Organizational Leadership, and has a peer-reviewed publication on democratic elections in Public Administration and Policy: An Asia-Pacific Journal (2019). He is the author of <em>PR To The People!</em> and publishes the Substack 'Garvey Labs | Power&Democracy.'
+                Terry holds a B.A. from Vassar College B.A. | Harvard Business School — Graduate Certificate, Organizational Leadership, and has a peer-reviewed publication on democratic elections in Public Administration and Policy: An Asia-Pacific Journal (2019). He is the author of <em>PR To The People!</em> and publishes the Substack 'Garvey Labs | Power&Democracy.'
               </p>
             </div>
           </div>

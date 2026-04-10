@@ -63,7 +63,7 @@ export default function InsightsPage() {
       excerpt: "Coming Q2 2026",
       meta: [],
       linkLabel: "Read Article →",
-      linkHref: "/insights/red",
+      linkHref: "/insights/renewable-article",
     },
   ];
 

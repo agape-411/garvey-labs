@@ -60,28 +60,46 @@ export default function GridPositiveFrameworkPage() {
         </div>
       </section>
 
-      {/* ================= WHY IT EXISTS ================= */}
-      <section className='max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24'>
-        <h2 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 md:mb-8'>
-          Designed for the Communities That Need It Most
-        </h2>
-        <p className='text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed max-w-4xl mb-8 md:mb-12'>
-          The Grid-Positive Community Integration Framework was developed
-          specifically for majority-Black communities under 150,000 residents in
-          the South and Northeast — the communities that have been most
-          overlooked by the first decade of data center development, and the
-          communities that have the most to gain from the next chapter. These
-          communities have transmission infrastructure, available industrial
-          land, and fiscal motivation. What they have lacked is a framework for
-          converting developer interest into community wealth. That is what this
-          methodology provides.
-        </p>
-        <img
-          src='/images/IM.png'
-          alt='Grid-Positive Community Integration Framework'
-          className='w-full rounded-lg'
-        />
-      </section>
+        {/* ================= WHY IT EXISTS ================= */}
+<section className="max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24">
+  
+  {/* TEXT BLOCK (always on top) */}
+  <div className="max-w-4xl mb-12 lg:mb-16">
+    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 md:mb-8">
+      Designed for the Communities That Need It Most
+    </h2>
+
+    <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
+      The Grid-Positive Community Integration Framework was developed
+      specifically for majority-Black communities under 150,000 residents in
+      the South and Northeast — the communities that have been most
+      overlooked by the first decade of data center development, and the
+      communities that have the most to gain from the next chapter. These
+      communities have transmission infrastructure, available industrial
+      land, and fiscal motivation. What they have lacked is a framework for
+      converting developer interest into community wealth. That is what this
+      methodology provides.
+    </p>
+  </div>
+
+  {/* IMAGE ROW */}
+  <div className="grid lg:grid-cols-2">
+    
+    {/* LEFT SPACER (empty on desktop) */}
+    <div className="hidden lg:block" />
+
+    {/* RIGHT IMAGE */}
+    <div className="flex justify-start lg:justify-end">
+      <img
+        src="/images/IM.png"
+        alt="Grid-Positive Community Integration Framework"
+        className="w-full max-w-md lg:max-w-lg rounded-lg"
+      />
+    </div>
+    
+  </div>
+
+</section>
 
       {/* ================= CTA ================= */}
       <section className='bg-gray-50 py-16 md:py-24'>

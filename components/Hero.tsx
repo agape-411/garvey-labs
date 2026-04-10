@@ -130,7 +130,7 @@ const HomePage = () => {
             Garvey Labs is a productized advisory firm. Every engagement has a defined scope, a transparent price, and a documented delivery timeline.
           </p>
 
-          <Link href="/services" className="bg-white text-[#0D6E6E] px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition">
+          <Link href="/grid-positive-framework" className="bg-white text-[#0D6E6E] px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition">
             See Our Services →
           </Link>
         </div>
@@ -141,54 +141,68 @@ const HomePage = () => {
         <div className="max-w-6xl mx-auto px-6">
 
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Insights
+        Insights
           </h2>
 
           <p className="text-base md:text-lg text-gray-600 mb-12 max-w-2xl">
-            Perspectives on the data center and renewable energy economies from Garvey Labs.
+        Perspectives on the data center and renewable energy economies from Garvey Labs.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
 
-            {[
-              {
-                tag: "DATA CENTER ECONOMY",
-                title: "How I Would Elect a Data Center in 2026: A Community Readiness Framework"
-              },
-              {
-                tag: "COMMUNITY WEALTH",
-                title: "The $4 Million Per Home Question: What the Ashburn Buyout Tells Us About Where Data Centers Are Going"
-              },
-              {
-                tag: "RENEWABLE ENERGY",
-                title: "From Opposition to 6-0: The Red Egret BESS Case Study in Community Stakeholder Engagement"
-              }
-            ].map((item, i) => (
-              <div key={i} className="bg-white p-6 rounded-xl">
-                <span className="text-sm font-semibold text-[#0D6E6E]">
-                  {item.tag}
-                </span>
+        {[
+          {
+            tag: "DATA CENTER ECONOMY",
+            title: "How I Would Elect a Data Center in 2026: A Community Readiness Framework",
+            image: "/images/T2.png"
+          },
+          {
+            tag: "COMMUNITY WEALTH",
+            title: "The $4 Million Per Home Question: What the Ashburn Buyout Tells Us About Where Data Centers Are Going",
+            image: "/images/T1.png"
+          },
+          {
+            tag: "RENEWABLE ENERGY",
+            title: "From Opposition to 6-0: The Red Egret BESS Case Study in Community Stakeholder Engagement",
+            image: "/images/case.jpg"
+          }
+        ].map((item, i) => (
+          <div key={i} className="bg-white rounded-xl overflow-hidden">
+            <div className="relative w-full h-40">
+          <Image
+            src={item.image}
+            alt={item.title}
+            fill
+            className="object-cover"
+          />
+            </div>
 
-                <h3 className="text-xl md:text-2xl font-semibold mt-3 mb-3 leading-snug">
-                  {item.title}
-                </h3>
+            <div className="p-6">
+          <span className="text-sm font-semibold text-[#0D6E6E]">
+            {item.tag}
+          </span>
 
-                <p className="text-sm text-gray-500 mb-4">
-                  Coming Soon — Q2 2026
-                </p>
+          <h3 className="text-xl md:text-2xl font-semibold mt-3 mb-3 leading-snug">
+            {item.title}
+          </h3>
 
-                <span className="text-[#0D6E6E] font-semibold">
-                  Read More →
-                </span>
-              </div>
-            ))}
+          <p className="text-sm text-gray-500 mb-4">
+            Coming Soon — Q2 2026
+          </p>
+
+          <Link href="/insights" className="text-[#0D6E6E] font-semibold hover:underline">
+            Read More →
+          </Link>
+            </div>
+          </div>
+        ))}
 
           </div>
 
           <div className="mt-12">
-            <span className="text-[#0D6E6E] font-semibold">
-              View All Insights →
-            </span>
+        <Link href="/insights" className="text-[#0D6E6E] font-semibold hover:underline">
+          View All Insights →
+        </Link>
           </div>
 
         </div>
@@ -280,7 +294,7 @@ const HomePage = () => {
 
         <div className="relative w-full h-40 mt-auto">
           <Image
-            src="/images/U2.jpg"
+            src="/images/U2.png"
             alt="Civic and Community Leaders"
             fill
             className="object-cover rounded-xl"
