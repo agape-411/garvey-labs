@@ -28,10 +28,10 @@ const AboutPage = () => {
           />
           <div className="absolute inset-0 bg-black/50 z-10" />
           <div className="relative z-20 text-center px-4 sm:px-6 max-w-4xl mx-auto mt-4 mb-4">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 text-white leading-tight">
               Built at the Intersection of Infrastructure, Labor, and Community Power
             </h1>
-            <p className="text-xl md:text-lg sm:text-lg text-white mb-8">
+            <p className="text-base sm:text-lg md:text-xl text-white mb-8">
               Garvey Labs was founded on a specific observation: the communities most overlooked by the data center economy are the communities best positioned to benefit from it — if they have the right framework.
             </p>
           </div>
