@@ -18,7 +18,7 @@ const AboutPage = () => {
       <div className="bg-background text-gray-800 leading-relaxed">
 
         {/* HERO SECTION */}
-        <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
+        <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
           <Image
             fill
             src="/images/A5.png"
@@ -27,7 +27,7 @@ const AboutPage = () => {
             priority
           />
           <div className="absolute inset-0 bg-black/50 z-10" />
-          <div className="relative z-20 text-center px-4 sm:px-6 max-w-4xl mx-auto">
+          <div className="relative z-20 text-center px-4 sm:px-6 max-w-4xl mx-auto mt-4 mb-4">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight">
               Built at the Intersection of Infrastructure, Labor, and Community Power
             </h1>
@@ -44,11 +44,9 @@ const AboutPage = () => {
             <p className="text-md sm:text-lg md:text-lg font-medium">
               Garvey Labs is a Washington, DC-based strategic infrastructure stakeholder and civic engagement advisory firm. We work at the intersection of data center and renewable energy development, community economic strategy, and infrastructure civic engagement — helping communities compete for and shape participation in these economies on terms that build long-term local value.
             </p>
+            
             <p className="text-md sm:text-lg md:text-lg font-medium">
-              The firm works exclusively on the community side. We never represent developer interests, accept developer compensation, or negotiate terms that have not been authorized by our client communities. Our advisory role is to help economic development organizations, CDCs, chambers, and civic leaders enter high-stakes infrastructure negotiations prepared — with proprietary market intelligence, a documented benefit framework, and a clear strategic posture — rather than reactive.
-            </p>
-            <p className="text-md sm:text-lg md:text-lg font-medium">
-              The firm's core intellectual asset is the <strong>Grid-Positive Community Integration Framework</strong> — a proprietary pre-negotiation leverage methodology developed for majority-Black communities competing for participation in the data center economy. It is the only methodology of its kind.
+              The firm's core intellectual asset is the <strong>Grid-Positive Community Integration Framework</strong> — a proprietary pre-negotiation leverage methodology developed for historically overlooked markets and communities competing for participation in the data center economy. It is the only methodology of its kind.
             </p>
             <p className="text-md sm:text-lg md:text-lg font-medium">
               All Garvey Labs work is built on rigorous analytical backing: verifiable data, unbiased conclusions, and documented sources. Every quantified claim cites a documented, citable source. Findings reflect what the data supports — not what any party, including the client, wants to hear. Where data is directional rather than definitive, that limitation is stated explicitly.
