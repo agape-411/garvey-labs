@@ -30,7 +30,7 @@ export default function FrameworkOverview() {
           </h1>
 
           <p className="text-lg md:text-xl text-white/85 max-w-3xl">
-            What majority-Black communities in the data center corridor are entitled to negotiate — and why developers accept it.
+            What historically overlooked markets and communities in the data center corridor are entitled to negotiate — and why developers accept it.
           </p>
         </div>
       </section>
@@ -65,7 +65,7 @@ export default function FrameworkOverview() {
           </h2>
 
           <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-            Data center developers are moving into majority-Black communities that have been bypassed by a decade of suburban siting — and those communities are negotiating blind. Without a framework, developers define the terms. Communities absorb the costs — ratepayer increases, infrastructure strain, road damage — and capture none of the benefit.
+            Data center developers are moving into historically overlooked markets and communities that have been bypassed by a decade of suburban siting — and those communities are negotiating blind. Without a framework, developers define the terms. Communities absorb the costs — ratepayer increases, infrastructure strain, road damage — and capture none of the benefit.
           </p>
 
           <p className="text-lg text-gray-700 leading-relaxed">
@@ -88,7 +88,7 @@ export default function FrameworkOverview() {
           </h2>
 
           <p className="text-lg text-gray-700 mb-12">
-            Four non-negotiable standards that define what every majority-Black community is entitled to extract from a data center deal.
+            Four non-negotiable standards that define what every historically overlooked markets and communities is entitled to extract from a data center deal.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -133,7 +133,7 @@ export default function FrameworkOverview() {
           </h2>
 
           <p className="text-lg text-gray-700 mb-12">
-            The community benefit package costs 1–5% of a standard $500M project. The advantages of building in a prepared majority-Black community versus a traditional suburban market are worth significantly more.
+            The community benefit package costs 1–5% of a standard $500M project. The advantages of building in a prepared traditionally overlooked market and community versus a traditional suburban market are worth significantly more.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8">

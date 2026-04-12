@@ -70,7 +70,7 @@ export default function GridPositiveFrameworkPage() {
 
             <p className='text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed'>
           The Grid-Positive Community Integration Framework was developed
-          specifically for majority-Black communities under 150,000 residents
+          specifically for historically overlooked markets and communities under 150,000 residents
           in the South and Northeast — the communities that have been most
           overlooked by the first decade of data center development, and the
           communities that have the most to gain from the next chapter. These
