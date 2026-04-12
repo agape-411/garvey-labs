@@ -306,28 +306,38 @@ const HomePage = () => {
   </div>
 </section>
 
-      {/* ================= FINAL CTA ================= */}
-      <section className="bg-[#121d29] text-white py-24 -mt-16 z-20 rounded-t-3xl">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+      import Image from "next/image";
 
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Explore Your Community's Opportunity?
-          </h2>
-          <div className="bg-red-500 text-white p-10 text-2xl">
-  TAILWIND TEST
-</div>
+/* ================= FINAL CTA ================= */
+<section className="bg-[#121d29] text-white py-24 -mt-16 z-20 rounded-t-3xl">
+  <div className="max-w-3xl mx-auto px-6 text-center">
 
-          <p className="text-base md:text-lg text-white/85 mb-8 leading-relaxed">
-            The Grid-Positive Community Intelligence Brief is the starting point — a jurisdiction-specific intelligence product delivered in 7 business days. Contact us to discuss what it would show for your community.
-          </p>
+    <h2 className="text-4xl md:text-5xl font-bold mb-6">
+      Ready to Explore Your Community's Opportunity?
+    </h2>
 
-          <button className="bg-white text-[#1B3A5C] px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition">
-            Contact Us →
-          </button>
+    
+    <div className="mb-10">
+      <Image
+        src="/images/C1.png"
+        alt="Community intelligence visualization"
+        width={900}
+        height={550}
+        className="w-full max-w-2xl mx-auto rounded-2xl shadow-xl"
+        priority
+      />
+    </div>
 
-        </div>
-      </section>
+    <p className="text-base md:text-lg text-white/85 mb-8 leading-relaxed">
+      The Grid-Positive Community Intelligence Brief is the starting point — a jurisdiction-specific intelligence product delivered in 7 business days. Contact us to discuss what it would show for your community.
+    </p>
 
+    <button className="bg-white text-[#1B3A5C] px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition">
+      Contact Us →
+    </button>
+
+  </div>
+</section>
     </main>
   )
 }
