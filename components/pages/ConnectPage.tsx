@@ -66,7 +66,7 @@ export default function ConnectPage() {
     <div className="bg-white text-[#2D3748] leading-relaxed">
       {/* Hero Section */}
       <header className="bg-gradient-to-r from-[#2C5282] to-[#1A365D] text-white py-16 px-6 text-center">
-        <h1 className="text-5xl font-bold mb-4">Connect With Us</h1>
+        <h1 className="text-3xl md:text-5xl sm:text-4xl lg:text-6xl font-bold mb-4">Connect With Us</h1>
         <p className="text-[#E6FFFA] text-lg max-w-2xl mx-auto">
           Join our network of strategic communications and civic engagement professionals
         </p>
@@ -86,7 +86,7 @@ export default function ConnectPage() {
 
       {/* Ways to Connect */}
       <section className="max-w-5xl mx-auto px-6 py-12 border-b border-[#E2E8F0] bg-white">
-        <h2 className="text-4xl font-semibold text-[#2C5282] mb-8">Ways to Connect</h2>
+        <h2 className="text-3xl md:text-5xl sm:text-4xl lg:text-6xl font-semibold text-[#2C5282] mb-8">Ways to Connect</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {[
             {
@@ -119,7 +119,7 @@ export default function ConnectPage() {
 
       {/* Ideal Collaborators */}
       <section className="max-w-5xl mx-auto px-6 py-12 border-b border-[#E2E8F0] bg-[#EDF2F7]">
-        <h2 className="text-4xl font-semibold text-[#2C5282] mb-8">Who We're Looking For</h2>
+        <h2 className="text-3xl md:text-5xl sm:text-4xl lg:text-6xl font-semibold text-[#2C5282] mb-8">Who We're Looking For</h2>
         <div className="grid md:grid-cols-2 gap-8">
           {[
             {
@@ -173,7 +173,7 @@ export default function ConnectPage() {
 
       {/* How We Work Together */}
       <section className="max-w-5xl mx-auto px-6 py-12 border-b border-[#E2E8F0] bg-white">
-        <h2 className="text-4xl font-semibold text-[#2C5282] mb-8">How We Work Together</h2>
+        <h2 className="text-3xl md:text-5xl sm:text-4xl lg:text-6xl font-semibold text-[#2C5282] mb-8">How We Work Together</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {[
             {
@@ -202,7 +202,7 @@ export default function ConnectPage() {
 
       {/* Collaboration Values */}
       <section className="max-w-5xl mx-auto px-6 py-12 border-b border-[#E2E8F0] bg-[#EDF2F7]">
-        <h2 className="text-4xl font-semibold text-[#2C5282] mb-8">Our Collaboration Values</h2>
+        <h2 className="text-3xl md:text-5xl sm:text-4xl lg:text-6xl font-semibold text-[#2C5282] mb-8">Our Collaboration Values</h2>
         {[
           {
             title: "Mutual Respect & Professional Growth",
@@ -226,7 +226,7 @@ export default function ConnectPage() {
 
       {/* Form */}
       <section className="max-w-5xl mx-auto px-6 py-12 bg-white">
-        <h2 className="text-4xl font-semibold text-[#2C5282] mb-4">Start the Conversation</h2>
+        <h2 className="text-3xl md:text-5xl sm:text-4xl lg:text-6xl font-semibold text-[#2C5282] mb-4">Start the Conversation</h2>
         <p className="mb-6">
           Interested in exploring collaboration opportunities? We'd love to learn about your
           background, expertise, and interests. Please share information about your experience and
