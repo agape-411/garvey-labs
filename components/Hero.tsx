@@ -59,7 +59,7 @@ const HomePage = () => {
             OUR ADVISORY PRACTICE
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl sm:text-4xl font-bold mb-6">
             Two Economies. One Advisory Firm.
           </h2>
 
@@ -215,7 +215,7 @@ const HomePage = () => {
       WHO WE SERVE
     </p>
 
-    <h2 className="text-4xl md:text-5xl font-bold mb-12 max-w-3xl">
+    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 max-w-3xl">
       Advisory Services for Communities and the Organizations That Serve Them.
     </h2>
 
@@ -306,7 +306,7 @@ const HomePage = () => {
   </div>
 </section>
 
-/* ================= FINAL CTA ================= */
+
 <section className="bg-[#121d29] text-white py-24 -mt-16 z-20 rounded-t-3xl">
   <div className="max-w-3xl mx-auto px-6 text-center">
 
