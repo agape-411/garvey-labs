@@ -74,7 +74,7 @@ export default function ConnectPage() {
 
       {/* Intro */}
       <section className="max-w-5xl mx-auto px-6 py-12 border-b border-[#E2E8F0] bg-white">
-        <h2 className="text-4xl font-semibold text-[#2C5282] mb-4">Building a Network of Excellence</h2>
+        <h2 className="text-3xl md:text-5xl sm:text-4xl lg:text-6xl font-semibold text-[#2C5282] mb-4">Building a Network of Excellence</h2>
         <p>
           Garvey Labs works with talented freelancers, independent consultants, and emerging
           professionals who share our commitment to creating positive change. We're always
