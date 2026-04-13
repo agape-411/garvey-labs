@@ -306,8 +306,6 @@ const HomePage = () => {
   </div>
 </section>
 
-      import Image from "next/image";
-
 /* ================= FINAL CTA ================= */
 <section className="bg-[#121d29] text-white py-24 -mt-16 z-20 rounded-t-3xl">
   <div className="max-w-3xl mx-auto px-6 text-center">
