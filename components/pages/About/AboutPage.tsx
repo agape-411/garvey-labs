@@ -38,7 +38,7 @@ const AboutPage = () => {
         </section>
 
         {/* THE FIRM */}
-        <section className="py-20 px-6 bg-gray-100">
+        <section className="py-20 px-6 bg-gray-100 mt-8 sm:mt-1">
           <div className="max-w-7xl mx-auto space-y-8">
             <h2 className="text-3xl md:text-5xl font-bold mb-8 text-center">About Garvey Labs</h2>
             <p className="text-md sm:text-lg md:text-lg font-medium">
@@ -72,7 +72,7 @@ const AboutPage = () => {
             </div>
 
             {/* Terry Lee Bio */}
-            <div className="space-y-6">
+            <div className="space-y-6 mt-8 sm:mt-1">
               <h2 className="text-3xl md:text-5xl font-bold text-primary">Terry Lee</h2>
               <p className="text-md sm:text-lg md:text-lg font-medium">
                 Terry Lee has spent 25 years working where infrastructure meets community — in government, organized labor, corporate advisory, and infrastructure development. The core skill these environments share is one that most advisory firms cannot credibly claim: knowing how to structure the entry of powerful private capital into communities that have historically had reason to be skeptical of it, and doing so in a way that creates durable benefit rather than extraction.
@@ -125,7 +125,7 @@ const AboutPage = () => {
             </p>
             <Link
               href="/connect"
-              className="inline-block px-8 py-4 bg-primary text-white text-lg font-semibold rounded-lg shadow-md hover:bg-primary/90 transition-colors"
+              className="inline-block px-8 py-4 bg-primary text-[#1B3A5C] text-lg font-semibold rounded-lg shadow-md hover:bg-primary/90 transition-colors"
             >
               Contact Us
             </Link>

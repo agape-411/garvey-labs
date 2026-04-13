@@ -25,7 +25,7 @@ const HomePage = () => {
         <div className="relative max-w-6xl mx-auto px-6 py-28">
           <div className="max-w-3xl">
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               The Data Center and Renewable Energy Economies Are Reshaping American Communities.
             </h1>
             
@@ -59,7 +59,7 @@ const HomePage = () => {
             OUR ADVISORY PRACTICE
           </p>
 
-          <h2 className="text-4xl md:text-5xl sm:text-4xl font-bold mb-6">
+          <h2 className="text-3xl lg:text-6xl md:text-5xl sm:text-4xl font-bold mb-6">
             Two Economies. One Advisory Firm.
           </h2>
 
