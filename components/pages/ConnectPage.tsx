@@ -234,7 +234,7 @@ export default function ConnectPage() {
         </p>
 
         <form
-          action="mailto:Contacts@garveylabs.com"
+          action="mailto:Contact@garveylabs.com"
           method="post"
           encType="text/plain"
           className="space-y-4"
@@ -310,7 +310,7 @@ export default function ConnectPage() {
 
         <div className="mt-6 text-sm text-[#718096]">
           <p>
-            <strong>Direct Email:</strong> Contacts@garveylabs.com
+            <strong>Direct Email:</strong> contact@garveylabs.com
           </p>
           <p>
             <strong>Response Time:</strong> We review all connection inquiries and respond within 5

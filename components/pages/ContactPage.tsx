@@ -135,12 +135,12 @@ const ContactPage = () => {
         <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto px-4">
           <div className="bg-white dark:bg-gray-900 border p-6 rounded text-center hover:bg-green-500">
             <h3 className="text-lg font-medium">Email</h3>
-            <p className="mt-2 text-lg">contacts@garveylabs.com</p>
+            <p className="mt-2 text-lg">contact@garveylabs.com</p>
           </div>
 
           <div className="bg-white dark:bg-gray-900 border p-6 rounded text-center hover:bg-green-500">
             <h3 className="text-lg font-medium">Phone</h3>
-            <p className="mt-2 text-lg">(555) 123-4567</p>
+            <p className="mt-2 text-lg">(240) 630-4372</p>
           </div>
 
           <div className="bg-white dark:bg-gray-900 border p-6 rounded text-center hover:bg-green-500">
