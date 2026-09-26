@@ -33,9 +33,9 @@ export default function Footer() {
 
             <ul className="space-y-3 text-base">
               <li><Link href="/" className="hover:text-white transition">Home</Link></li>
-              <li><Link href="/industries/data-center-economy" className="hover:text-white transition">Data Center Economy</Link></li>
-              <li><Link href="/industries/renewable-energy" className="hover:text-white transition">Renewable Energy</Link></li>
-              <li><Link href="/services/grid-positive-framework" className="hover:text-white transition">The Grid-Positive Framework</Link></li>
+              <li><Link href="/data-center-economy" className="hover:text-white transition">Data Center Economy</Link></li>
+              <li><Link href="/renewable-energy" className="hover:text-white transition">Renewable Energy</Link></li>
+              <li><Link href="/grid-positive-framework" className="hover:text-white transition">The Grid-Positive Framework</Link></li>
               <li><Link href="/about" className="hover:text-white transition">About</Link></li>
               <li><Link href="/insights" className="hover:text-white transition">Insights</Link></li>
               <li><Link href="/connect" className="hover:text-white transition">Connect</Link></li>
