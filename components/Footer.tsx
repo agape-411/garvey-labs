@@ -38,6 +38,7 @@ export default function Footer() {
               <li><Link href="/grid-positive-framework" className="hover:text-white transition">The Grid-Positive Framework</Link></li>
               <li><Link href="/about" className="hover:text-white transition">About</Link></li>
               <li><Link href="/insights" className="hover:text-white transition">Insights</Link></li>
+              <li><Link href="/where-we-are" className="hover:text-white transition">Where we are</Link></li>
               <li><Link href="/connect" className="hover:text-white transition">Connect</Link></li>
             </ul>
           </div>

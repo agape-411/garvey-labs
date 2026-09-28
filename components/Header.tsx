@@ -114,6 +114,9 @@ const Header = () => {
           <Link href="/about" className="hover:text-[#319795] transition">
             About
           </Link>
+          <Link href="/where-we-are" className="hover:text-[#319795] transition">
+            Where we are
+          </Link>
           <Link href="/connect" className="hover:text-[#319795] transition">
             Connect
           </Link>
