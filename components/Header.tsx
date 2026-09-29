@@ -197,6 +197,9 @@ const Header = () => {
             <Link href="/about" onClick={() => setMenuOpen(false)} className="hover:text-[#319795]">
               About
             </Link>
+            <Link href="/where-we-are" onClick={() => setMenuOpen(false)} className="hover:text-[#319795]">
+              Where we are
+            </Link>
             <Link href="/connect" onClick={() => setMenuOpen(false)} className="hover:text-[#319795]">
               Connect
             </Link>
