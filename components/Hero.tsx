@@ -9,44 +9,46 @@ const HomePage = () => {
     <main className="font-sans text-[#2D2D2D]">
 
       {/* ================= HERO ================= */}
-      <section className="relative min-h-screen flex items-center text-white">
-        
-        <div className="absolute inset-0">
-          <Image
-            src="/images/hero1.png"
-            alt="Transmission infrastructure"
-            fill
-            priority
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-[#1B3A5C]/85" />
-        </div>
+      <section className="relative flex min-h-[680px] items-center text-white sm:min-h-[640px] md:min-h-[660px] lg:min-h-[680px] xl:min-h-screen">
+  <div className="absolute inset-0">
+    <Image
+      src="/images/hero1.png"
+      alt="Transmission infrastructure"
+      fill
+      priority
+      className="object-cover"
+    />
+    <div className="absolute inset-0 bg-[#1B3A5C]/85" />
+  </div>
 
-        <div className="relative max-w-6xl mx-auto px-6 py-28">
-          <div className="max-w-3xl">
+  <div className="relative mx-auto w-full max-w-6xl px-5 py-16 sm:px-6 sm:py-16 md:py-16 lg:px-8 lg:py-20 xl:py-28">
+    <div className="max-w-3xl">
+      <h1 className="mb-5 text-3xl font-bold leading-tight sm:text-4xl lg:mb-6 lg:text-5xl xl:text-6xl">
+        The Data Center and Renewable Energy Economies Are Reshaping American Communities.
+      </h1>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              The Data Center and Renewable Energy Economies Are Reshaping American Communities.
-            </h1>
-            
+      <p className="mb-7 text-lg leading-relaxed text-white/85 lg:mb-8 xl:text-xl">
+        Garvey Labs helps communities and the organizations that serve them navigate that transformation — capturing lasting wealth, stronger infrastructure, and real career pathways.
+      </p>
 
-            <p className="text-lg md:text-xl text-white/85 mb-8 leading-relaxed">
-              Garvey Labs helps communities and the organizations that serve them navigate that transformation — capturing lasting wealth, stronger infrastructure, and real career pathways.
-            </p>
+      <div className="flex flex-wrap gap-4">
+        <Link
+          href="/data-center-economy"
+          className="rounded-lg bg-white px-6 py-3 font-semibold text-[#1B3A5C] hover:opacity-90"
+        >
+          Explore Our Industries →
+        </Link>
 
-            <div className="flex flex-wrap gap-4">
-              <Link href="/data-center-economy" className="bg-white text-[#1B3A5C] px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition">
-                Explore Our Industries →
-              </Link>
-
-              <Link href="/contact" className="border border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-[#1B3A5C] transition">
-                Contact Us
-              </Link>
-            </div>
-
-          </div>
-        </div>
-      </section>
+        <Link
+          href="/contact"
+          className="rounded-lg border border-white px-6 py-3 font-semibold hover:bg-white hover:text-[#1B3A5C]"
+        >
+          Contact Us
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* ================= INDUSTRIES ================= */}
       <section className="relative bg-white pt-20 pb-24 -mt-16 z-20 rounded-t-3xl">
