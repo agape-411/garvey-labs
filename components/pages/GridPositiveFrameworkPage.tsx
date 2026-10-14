@@ -93,12 +93,80 @@ export default function GridPositiveFrameworkPage() {
               The framework also requires a public data dashboard, a plain-language annual report to every household within one mile, and a grievance process with non-retaliation protection. A developer that conditions RFP participation on a community-side NDA is treated as a non-responsive bidder.`}
             />
           </div>
+          
+          {/* ================= BEHIND-THE-METER STANDARD ================= */}
+            <article
+              id="behind-the-meter"
+              aria-labelledby="behind-the-meter-title"
+              className="border border-[#d9dde1] bg-gray-50 p-5 sm:p-6"
+            >
+              <p className="m-0 mb-2 font-sans text-[13px] font-semibold uppercase leading-[1.5] tracking-[0.12em] text-[#0D6E6E]">
+                Behind-the-Meter Standard
+                <span className="ml-2 inline-block border border-[#d9dde1] bg-white px-2 py-1 text-[10px] tracking-[0.06em] text-gray-600">
+                  New in v2.16
+                </span>
+              </p>
+
+              <h3
+                id="behind-the-meter-title"
+                className="m-0 mb-3 text-[21px] font-semibold leading-[1.3] text-[#1B3A5C] sm:text-[21px]"
+              >
+                When the Data Center Brings Its Own Power Plant
+              </h3>
+
+              <p className="m-0 mb-5 max-w-[760px] whitespace-pre-line text-[17px] leading-[1.6] text-[#1B3A5C]">
+                When the grid can't deliver power on the developer's timeline, more developers are building their own.
+                That turns a data center application into a power plant application. The Behind-the-Meter Standard
+                sets the terms for on-site generation (turbines, engines, storage, or renewables) and applies across
+                all five standards.
+              </p>
+
+              <div className="grid grid-cols-1 gap-3 md:grid-cols-3 md:gap-4">
+                <div className="border border-[#d9dde1] border-t-[3px] border-t-[#0D6E6E] bg-white p-4 sm:p-5">
+                  <h4 className="m-0 mb-2 text-[17px] font-semibold leading-[1.4] text-[#1B3A5C]">
+                    Transparency
+                  </h4>
+                  <p className="m-0 text-[16px] leading-[1.6] text-[#1B3A5C]">
+                    The community sees what the plant burns, emits, and plans, on a public schedule.
+                  </p>
+                </div>
+
+                <div className="border border-[#d9dde1] border-t-[3px] border-t-[#0D6E6E] bg-white p-4 sm:p-5">
+                  <h4 className="m-0 mb-2 text-[17px] font-semibold leading-[1.4] text-[#1B3A5C]">
+                    Best Practice
+                  </h4>
+                  <p className="m-0 text-[16px] leading-[1.6] text-[#1B3A5C]">
+                    Permitted before it runs, built to the strongest proven controls, and adopting cleaner power the
+                    moment an independent test shows it competes on cost.
+                  </p>
+                </div>
+
+                <div className="border border-[#d9dde1] border-t-[3px] border-t-[#0D6E6E] bg-white p-4 sm:p-5">
+                  <h4 className="m-0 mb-2 text-[17px] font-semibold leading-[1.4] text-[#1B3A5C]">
+                    Accountability
+                  </h4>
+                  <p className="m-0 text-[16px] leading-[1.6] text-[#1B3A5C]">
+                    Commitments carry a defined consequence and bind any future owner or operator.
+                  </p>
+                </div>
+              </div>
+
+              <p className="m-0 mt-5 border-t border-[#d9dde1] pt-4 text-[17px] font-semibold leading-[1.6] text-[#1B3A5C]">
+                The model: built ready, phased in on a public test, backed by a known cost.
+              </p>
+
+              <p className="m-0 mt-3 font-sans text-[16px] leading-[1.6] text-gray-600">
+                Full Behind-the-Meter provisions are part of the Grid-Positive methodology and are applied in each
+                community engagement.
+              </p>
+            </article>
+
           <p
             className='mt-6 text-[14px] leading-[1.5] text-gray-500'
             style={{ fontFamily: 'Arial, Helvetica, sans-serif' }}
           >
-            Framework version: Executive Framework v2.15b, May 2026. Companion
-            to Methodology v2.15a.
+            Framework version: Executive Framework v2.16b, May 2026. Companion
+            to Methodology v2.16a.
           </p>
         </div>
       </section>
